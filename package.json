@@ -1,0 +1,28 @@
+{
+  "name": "swagger-merger",
+  "version": "0.0.1",
+  "description": "Merge multiple swagger files into a swagger file.",
+  "main": "./bin/swagger-merger",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WindomZ/swagger-merger.git"
+  },
+  "keywords": [
+    "swagger",
+    "merge",
+    "merger"
+  ],
+  "author": "WindomZ <git.windomz@gmail.com>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/WindomZ/swagger-merger/issues"
+  },
+  "homepage": "https://github.com/WindomZ/swagger-merger#readme",
+  "dependencies": {
+    "co": "^4.6.0",
+    "commander": "^2.9.0"
+  }
+}
