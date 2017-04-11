@@ -24,7 +24,6 @@
   "dependencies": {
     "co": "^4.6.0",
     "commander": "^2.9.0",
-    "js-yaml": "^3.8.3",
-    "json-refs": "^2.1.6"
+    "js-yaml": "^3.8.3"
   }
 }
