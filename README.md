@@ -13,7 +13,7 @@ Merge **multiple** swagger files into **a** swagger file, support **JSON**/**YAM
 ## Installation
 
 ```bash
-npm install swagger-merger -g
+npm install -g swagger-merger
 ```
 
 ## Usage
