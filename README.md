@@ -38,3 +38,11 @@ $ swagger-merger -h
     -i, --input <file>   main or entry swagger file
     -o, --output <file>  generated merge swagger file
 ```
+
+## Examples
+
+### [echo](https://github.com/WindomZ/swagger-merger/tree/master/example/echo)
+
+## License
+
+The [MIT License](https://github.com/WindomZ/swagger-merger/blob/master/LICENSE)
