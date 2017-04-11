@@ -1,4 +1,8 @@
 # swagger-merger
+[![Build Status](https://travis-ci.org/WindomZ/swagger-merger.svg?branch=master)](https://travis-ci.org/WindomZ/swagger-merger)
+![License](https://img.shields.io/badge/license-MIT-green.svg)
+[![Dependency](https://david-dm.org/WindomZ/swagger-merger.svg)](https://david-dm.org/WindomZ/`)
+[![Standard - JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com/)
 
 Merge **multiple** swagger files into **a** swagger file, support **JSON**/**YAML**.
 
