@@ -1,4 +1,4 @@
 # Created by .ignore support plugin (hsz.mobi)
 !.gitignore
-swagger.yaml
-swagger.json
+swagger*.yaml
+swagger*.json
