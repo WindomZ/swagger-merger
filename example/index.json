@@ -27,16 +27,10 @@
                 },
                 "parameters": [
                     {
-                        "name": "name",
-                        "in": "formData",
-                        "description": "name",
-                        "type": "string"
+                        "$ref": "./name.json"
                     },
                     {
-                        "name": "year",
-                        "in": "formData",
-                        "description": "year",
-                        "type": "string"
+                        "$ref": "./year.json"
                     }
                 ]
             }

@@ -22,14 +22,8 @@ paths:
         200:
           description: Echo POST
       parameters:
-        - name: name
-          in: formData
-          description: name
-          type: string
-        - name: year
-          in: formData
-          description: year
-          type: string
+        - $ref: "./name.yaml"
+        - $ref: "./year.yaml"
   /test-path/{id}:
     parameters:
       - name: id
