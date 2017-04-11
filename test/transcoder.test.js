@@ -23,7 +23,7 @@ test.serial('transcoder error 2', async (t) => {
 
 test.serial('transcoder error 3', async (t) => {
   await transcoder({
-    input: './example/echo/swagger.yaml',
+    input: './example/echo/echo.yaml',
     output: './example/echo/swagger-trans.yaml'
   }).then(() => {
     t.fail('should be catch error')
@@ -32,7 +32,7 @@ test.serial('transcoder error 3', async (t) => {
 
 test.serial('transcoder pass 1', async (t) => {
   await transcoder({
-    input: './example/echo/swagger.yaml',
+    input: './example/echo/echo.yaml',
     output: './example/echo/swagger-trans.json'
   }).then(() => {
     t.pass()
@@ -41,7 +41,7 @@ test.serial('transcoder pass 1', async (t) => {
 
 test.serial('transcoder pass 2', async (t) => {
   await transcoder({
-    input: './example/echo/swagger.json',
+    input: './example/echo/echo.json',
     output: './example/echo/swagger-trans.yaml'
   }).then(() => {
     t.pass()
