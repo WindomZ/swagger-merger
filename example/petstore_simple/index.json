@@ -27,11 +27,11 @@
         "application/json"
     ],
     "paths": {
-        "$ref-pets": "./paths/pets.json",
-        "$ref-pets-id": "./paths/pets-id.json"
+        "$ref#pets": "./paths/pets.json",
+        "$ref#pets-id": "./paths/pets-id.json"
     },
     "definitions": {
-        "$ref-pets": "./definitions/pets.json",
-        "$ref-error": "./definitions/error.json"
+        "$ref#pets": "./definitions/pets.json",
+        "$ref#error": "./definitions/error.json"
     }
 }

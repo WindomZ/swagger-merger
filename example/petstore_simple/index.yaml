@@ -20,8 +20,8 @@ consumes:
 produces:
   - application/json
 paths:
-  $ref-pets: "./paths/pets.yaml"
-  $ref-pets-id: "./paths/pets-id.yaml"
+  $ref#pets: "./paths/pets.yaml"
+  $ref#pets-id: "./paths/pets-id.yaml"
 definitions:
-  $ref-pets: "./definitions/pets.yaml"
-  $ref-error: "./definitions/error.yaml"
+  $ref#pets: "./definitions/pets.yaml"
+  $ref#error: "./definitions/error.yaml"
