@@ -5,9 +5,16 @@ const test = require('ava')
 
 const transcoder = require('../lib/transcoder')
 
-test('transcoder error', async (t) => {
+test('transcoder fail', async (t) => {
   await transcoder({
     input: ''
+  }).then(() => {
+    t.fail('should be catch error')
+  }).catch(() => t.pass())
+
+  await transcoder({
+    input: './example/echo/swagger.yaml',
+    output: ''
   }).then(() => {
     t.fail('should be catch error')
   }).catch(() => t.pass())

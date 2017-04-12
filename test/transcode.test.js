@@ -5,7 +5,7 @@ const test = require('ava')
 
 const {stringJSON2YAML, stringYAML2JSON} = require('../lib/transcode')
 
-test('transcode.stringJSON2YAML error', t => {
+test('transcode.stringJSON2YAML fail', t => {
   try {
     stringJSON2YAML(null)
     t.fail('should be catch error')
@@ -22,6 +22,13 @@ test('transcode.stringJSON2YAML error', t => {
 
   try {
     stringJSON2YAML('')
+    t.fail('should be catch error')
+  } catch (e) {
+    t.pass()
+  }
+
+  try {
+    stringJSON2YAML('xxx')
     t.fail('should be catch error')
   } catch (e) {
     t.pass()
@@ -46,7 +53,7 @@ test('transcode.stringJSON2YAML pass', t => {
   }
 })
 
-test('transcode.stringYAML2JSON error', t => {
+test('transcode.stringYAML2JSON fail', t => {
   try {
     stringYAML2JSON(null)
     t.fail('should be catch error')
@@ -63,6 +70,13 @@ test('transcode.stringYAML2JSON error', t => {
 
   try {
     stringYAML2JSON('')
+    t.fail('should be catch error')
+  } catch (e) {
+    t.pass()
+  }
+
+  try {
+    stringYAML2JSON('xxx:xxx:xxx')
     t.fail('should be catch error')
   } catch (e) {
     t.pass()
