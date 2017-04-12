@@ -26,6 +26,21 @@ test('merger fail', async (t) => {
   }).catch(() => t.pass())
 })
 
+test('merger heroku-pets pass', async (t) => {
+  await merger({
+    input: './example/heroku-pets/index.yaml'
+  }).then(() => {
+    t.pass()
+  }).catch(err => t.fail(err))
+
+  await merger({
+    input: './example/heroku-pets/index.json',
+    output: './example/heroku-pets/swagger.json'
+  }).then(() => {
+    t.pass()
+  }).catch(err => t.fail(err))
+})
+
 test('merger echo pass', async (t) => {
   await merger({
     input: './example/echo/index.yaml'

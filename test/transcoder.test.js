@@ -41,6 +41,22 @@ test('transcoder fail', async (t) => {
   }).catch(() => t.pass())
 })
 
+test('transcoder heroku-pets pass', async (t) => {
+  await transcoder({
+    input: './example/heroku-pets/heroku-pets.yaml',
+    output: './example/heroku-pets/swagger-trans.json'
+  }).then(() => {
+    t.pass()
+  }).catch(err => t.fail(err))
+
+  await transcoder({
+    input: './example/heroku-pets/heroku-pets.json',
+    output: './example/heroku-pets/swagger-trans.yaml'
+  }).then(() => {
+    t.pass()
+  }).catch(err => t.fail(err))
+})
+
 test('transcoder echo pass', async (t) => {
   await transcoder({
     input: './example/echo/echo.yaml',
