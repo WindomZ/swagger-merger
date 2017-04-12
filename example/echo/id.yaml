@@ -1,0 +1,5 @@
+name: id
+in: path
+description: ID
+type: string
+required: true

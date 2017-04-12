@@ -26,11 +26,7 @@ paths:
         - $ref: "./year.yaml"
   /test-path/{id}:
     parameters:
-      - name: id
-        in: path
-        description: ID
-        type: string
-        required: true
+      - $ref: "./id.yaml"
     get:
       responses:
         200:

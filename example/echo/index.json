@@ -38,11 +38,7 @@
         "/test-path/{id}": {
             "parameters": [
                 {
-                    "name": "id",
-                    "in": "path",
-                    "description": "ID",
-                    "type": "string",
-                    "required": true
+                    "$ref": "./id.json"
                 }
             ],
             "get": {
