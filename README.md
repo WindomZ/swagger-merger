@@ -43,6 +43,7 @@ $ swagger-merger -h
     -V, --version        output the version number
     -i, --input <file>   input a main/entry swagger file(JSON/YAML).
     -o, --output <file>  output a merged swagger file(JSON/YAML).
+    --debug              debug mode, such as print error tracks
 ```
 
 ## Examples
