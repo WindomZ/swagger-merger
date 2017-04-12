@@ -65,4 +65,4 @@ $ swagger-merger -h
 
 ## License
 
-The [MIT License](https://github.com/WindomZ/swagger-merger/blob/master/LICENSE)
+The [Apache License 2.0](https://github.com/WindomZ/swagger-merger/blob/master/LICENSE)
