@@ -5,7 +5,10 @@
   "preferGlobal": true,
   "main": "./bin/swagger-merger",
   "bin": {
-    "ua-string": "./bin/swagger-merger"
+    "swagger-merger": "./bin/swagger-merger"
+  },
+  "engines": {
+    "node": ">= 0.6.x"
   },
   "scripts": {
     "test": "standard && nyc --reporter=lcov --reporter=text-lcov ava"
