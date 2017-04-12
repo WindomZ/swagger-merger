@@ -48,7 +48,19 @@ $ swagger-merger -h
 
 ## Examples
 
+### [heroku-pets](https://github.com/WindomZ/swagger-merger/tree/master/example/heroku-pets)
+
+- Official swagger original example
+
 ### [echo](https://github.com/WindomZ/swagger-merger/tree/master/example/echo)
+
+- Official swagger original example
+- Modify to support for `$ref` tags
+
+### [petstore_simple](https://github.com/WindomZ/swagger-merger/tree/master/example/petstore_simple)
+
+- Official swagger original example
+- Modify to support for `$ref#`* tags
 
 ## License
 
