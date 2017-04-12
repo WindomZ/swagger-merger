@@ -26,7 +26,7 @@ test('merger fail', async (t) => {
   }).catch(() => t.pass())
 })
 
-test('merger pass', async (t) => {
+test('merger echo pass', async (t) => {
   await merger({
     input: './example/echo/index.yaml'
   }).then(() => {
@@ -36,6 +36,21 @@ test('merger pass', async (t) => {
   await merger({
     input: './example/echo/index.json',
     output: './example/echo/swagger.json'
+  }).then(() => {
+    t.pass()
+  }).catch(err => t.fail(err))
+})
+
+test('merger petstore_simple pass', async (t) => {
+  await merger({
+    input: './example/petstore_simple/index.yaml'
+  }).then(() => {
+    t.pass()
+  }).catch(err => t.fail(err))
+
+  await merger({
+    input: './example/petstore_simple/index.json',
+    output: './example/petstore_simple/swagger.json'
   }).then(() => {
     t.pass()
   }).catch(err => t.fail(err))

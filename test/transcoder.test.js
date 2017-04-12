@@ -41,7 +41,7 @@ test('transcoder fail', async (t) => {
   }).catch(() => t.pass())
 })
 
-test('transcoder pass', async (t) => {
+test('transcoder echo pass', async (t) => {
   await transcoder({
     input: './example/echo/echo.yaml',
     output: './example/echo/swagger-trans.json'
@@ -52,6 +52,22 @@ test('transcoder pass', async (t) => {
   await transcoder({
     input: './example/echo/echo.json',
     output: './example/echo/swagger-trans.yaml'
+  }).then(() => {
+    t.pass()
+  }).catch(err => t.fail(err))
+})
+
+test('transcoder petstore_simple pass', async (t) => {
+  await transcoder({
+    input: './example/petstore_simple/petstore_simple.yaml',
+    output: './example/petstore_simple/swagger-trans.json'
+  }).then(() => {
+    t.pass()
+  }).catch(err => t.fail(err))
+
+  await transcoder({
+    input: './example/petstore_simple/petstore_simple.json',
+    output: './example/petstore_simple/swagger-trans.yaml'
   }).then(() => {
     t.pass()
   }).catch(err => t.fail(err))
