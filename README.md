@@ -36,7 +36,7 @@ $ swagger-merger -h
     -V, --version        output the version number
     -i, --input <file>   input a main/entry JSON/YAML swagger file
     -o, --output <file>  output a merged JSON/YAML swagger file
-    -c, --compress       compress JSON format strings
+    -c, --compact        compact JSON/YAML format string
     --debug              debug mode, such as print error tracks
 ```
 
