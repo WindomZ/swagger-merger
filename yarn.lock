@@ -1526,6 +1526,13 @@ flat-cache@^1.2.1:
     graceful-fs "^4.1.2"
     write "^0.2.1"
 
+fmtconv@latest:
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/fmtconv/-/fmtconv-0.3.0.tgz#f5cf8b34a87cf3cfbaaa7c7ef1e3165393fe5d8c"
+  dependencies:
+    commander "^2.9.0"
+    js-yaml "^3.8.3"
+
 fn-name@^2.0.0:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/fn-name/-/fn-name-2.0.1.tgz#5214d7537a4d06a4a301c0cc262feb84188002e7"
@@ -3424,7 +3431,7 @@ standard-engine@~7.0.0:
     minimist "^1.1.0"
     pkg-conf "^2.0.0"
 
-standard@*:
+standard@latest:
   version "10.0.1"
   resolved "https://registry.yarnpkg.com/standard/-/standard-10.0.1.tgz#99c1578fcca8d6f54ce8c2711f5452443e839082"
   dependencies:
