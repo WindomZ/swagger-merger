@@ -14,7 +14,6 @@ Merge **multiple** swagger files into **a** swagger file, support **JSON**/**YAM
 
 - [x] Support **JSON**/**YAML** swagger files.
 - [x] *Merge* ***multiple*** swagger files into ***a*** swagger file.
-- [x] *Transcode* with **JSON**/**YAML** swagger file.
 
 ## Installation
 
@@ -27,13 +26,7 @@ npm install -g swagger-merger
 ```bash
 $ swagger-merger -h
 
-  Usage: swagger-merger [[-h] [-v] [-i=file] [-o=file]] [command]
-
-
-  Commands:
-
-    merge <input> <output>            Merge all associated files into a single `output` file from a `input` file.
-    transcode|trans <input> <output>  Transcode with JSON/YAML swagger file.
+  Usage: swagger-merger [-h] [-v] [-o file] <-i file | file>
 
   Merge multiple swagger files into a swagger file, just support JSON/YAML.
 
@@ -41,12 +34,14 @@ $ swagger-merger -h
 
     -h, --help           output usage information
     -V, --version        output the version number
-    -i, --input <file>   input a main/entry swagger file(JSON/YAML)
-    -o, --output <file>  output a merged swagger file(JSON/YAML)
+    -i, --input <file>   input a main/entry JSON/YAML swagger file
+    -o, --output <file>  output a merged JSON/YAML swagger file
     --debug              debug mode, such as print error tracks
 ```
 
 ## Examples
+
+Run shell `./example/example.sh` for more help.
 
 ### [heroku-pets](https://github.com/WindomZ/swagger-merger/tree/master/example/heroku-pets)
 
