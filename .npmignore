@@ -1,0 +1,22 @@
+# Created by .ignore support plugin (hsz.mobi)
+
+# IntelliJ project files
+.idea
+*.iml
+out
+gen
+
+node_modules/
+coverage/
+lib-cov/
+coverage.json
+npm-debug.log
+
+# GitHub
+.github
+
+# Others
+.travis.yml
+
+example/
+test/
