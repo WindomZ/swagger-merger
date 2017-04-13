@@ -28,7 +28,7 @@ npm install -g swagger-merger
 ```bash
 $ swagger-merger -h
 
-  Usage: swagger-merger [-h] [-v] [-o file] <-i file | file>
+  Usage: swagger-merger [-h] [-v] [-c] [-o file] <-i file | file>
 
   Merge multiple swagger files into a swagger file, just support JSON/YAML.
 
@@ -38,6 +38,7 @@ $ swagger-merger -h
     -V, --version        output the version number
     -i, --input <file>   input a main/entry JSON/YAML swagger file
     -o, --output <file>  output a merged JSON/YAML swagger file
+    -c, --compact        compact JSON/YAML format string
     --debug              debug mode, such as print error tracks
 ```
 

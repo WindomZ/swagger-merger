@@ -20,6 +20,18 @@ test('merger_json pass', t => {
     merger({
       dir: './example/echo/',
       input: './example/echo/index.json',
+      output: './example/echo/swagger.json',
+      compact: true
+    })
+    t.pass()
+  } catch (e) {
+    t.fail(e)
+  }
+
+  try {
+    merger({
+      dir: './example/echo/',
+      input: './example/echo/index.json',
       output: './example/echo/swagger.json'
     })
     t.pass()
