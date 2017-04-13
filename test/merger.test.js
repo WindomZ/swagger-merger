@@ -5,24 +5,17 @@ const test = require('ava')
 
 const merger = require('../lib/merger')
 
-test('merger fail', async (t) => {
+test.serial('merger fail', async (t) => {
   await merger({
     input: ''
   }).then(() => {
-    t.fail('should be catch error')
+    t.fail('should be catch error 1')
   }).catch(() => t.pass())
 
   await merger({
     input: './example/echo/index.xxx'
   }).then(() => {
-    t.fail('should be catch error')
-  }).catch(() => t.pass())
-
-  await merger({
-    input: './example/echo/index.yaml',
-    output: './example/echo/swagger.json'
-  }).then(() => {
-    t.fail('should be catch error')
+    t.fail('should be catch error 2')
   }).catch(() => t.pass())
 })
 
