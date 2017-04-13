@@ -1,6 +1,6 @@
 {
   "name": "swagger-merger",
-  "version": "0.8.0",
+  "version": "0.9.0",
   "description": "Merge multiple swagger files into a swagger file, support JSON/YAML.",
   "preferGlobal": true,
   "main": "./bin/swagger-merger",
