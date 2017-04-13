@@ -1,6 +1,6 @@
 {
   "name": "swagger-merger",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "description": "Merge multiple swagger files into a swagger file, support JSON/YAML.",
   "preferGlobal": true,
   "main": "./bin/swagger-merger",
@@ -22,6 +22,10 @@
     "merge",
     "merger"
   ],
+  "files": [
+    "bin/*",
+    "lib/*"
+  ],
   "author": "WindomZ <git.windomz@gmail.com>",
   "license": "Apache-2.0",
   "bugs": {
@@ -31,7 +35,7 @@
   "dependencies": {
     "co": "^4.6.0",
     "commander": "^2.9.0",
-    "js-yaml": "^3.8.3"
+    "fmtconv": "*"
   },
   "devDependencies": {
     "ava": "^0.19.1",
