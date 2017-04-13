@@ -5,19 +5,25 @@ const test = require('ava')
 
 const merger = require('../lib/merger_json')
 
-test('merger_json pass', async (t) => {
-  await merger({
-    dir: './example/echo/',
-    input: './example/echo/index.json'
-  }).then(() => {
+test('merger_json pass', t => {
+  try {
+    merger({
+      dir: './example/echo/',
+      input: './example/echo/index.json'
+    })
     t.pass()
-  }).catch(err => t.fail(err))
+  } catch (e) {
+    t.fail(e)
+  }
 
-  await merger({
-    dir: './example/echo/',
-    input: './example/echo/index.json',
-    output: './example/echo/swagger.json'
-  }).then(() => {
+  try {
+    merger({
+      dir: './example/echo/',
+      input: './example/echo/index.json',
+      output: './example/echo/swagger.json'
+    })
     t.pass()
-  }).catch(err => t.fail(err))
+  } catch (e) {
+    t.fail(e)
+  }
 })
