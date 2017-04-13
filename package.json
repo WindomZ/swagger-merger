@@ -31,12 +31,12 @@
   "dependencies": {
     "co": "^4.6.0",
     "commander": "^2.9.0",
-    "fmtconv": "*"
+    "fmtconv": "latest"
   },
   "devDependencies": {
     "ava": "^0.19.1",
     "coveralls": "^2.13.0",
     "nyc": "^10.2.0",
-    "standard": "*"
+    "standard": "latest"
   }
 }
