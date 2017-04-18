@@ -10,7 +10,7 @@
 Merge **multiple** swagger files into **a** swagger file, support **JSON**/**YAML**.
 
 [![swagger-merger](https://img.shields.io/npm/v/swagger-merger.svg)](https://www.npmjs.com/package/swagger-merger)
-![status](https://img.shields.io/badge/status-beta-green.svg)
+![status](https://img.shields.io/badge/status-stable-green.svg)
 
 ## Features
 
