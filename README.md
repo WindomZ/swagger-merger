@@ -7,7 +7,7 @@
 [![Coverage Status](https://coveralls.io/repos/github/WindomZ/swagger-merger/badge.svg?branch=master)](https://coveralls.io/github/WindomZ/swagger-merger?branch=master)
 [![Standard - JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com/)
 
-Merge **multiple** swagger files into **a** swagger file, support **JSON**/**YAML**.
+> Merge **multiple** swagger files into **a** swagger file, support **JSON**/**YAML**.
 
 [![swagger-merger](https://img.shields.io/npm/v/swagger-merger.svg)](https://www.npmjs.com/package/swagger-merger)
 ![status](https://img.shields.io/badge/status-stable-green.svg)
