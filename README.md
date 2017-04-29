@@ -9,13 +9,15 @@
 
 > Merge **multiple** swagger files into **a** swagger file, support **JSON**/**YAML**.
 
+[![NPM](https://nodei.co/npm/swagger-merger.png)](https://nodei.co/npm/swagger-merger/)
+
 [![swagger-merger](https://img.shields.io/npm/v/swagger-merger.svg)](https://www.npmjs.com/package/swagger-merger)
 ![status](https://img.shields.io/badge/status-stable-green.svg)
 
 ## Features
 
-- [x] Support **JSON**/**YAML** swagger files.
-- [x] *Merge* ***multiple*** swagger files into ***a*** swagger file.
+- [x] _Support_ **JSON**/**YAML** swagger files.
+- [x] _Merge_ ***multiple*** swagger files into ***a*** swagger file.
 
 ## Installation
 
