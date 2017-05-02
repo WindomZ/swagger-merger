@@ -53,15 +53,30 @@ Run shell `./example/example.sh` for more help.
 - Official swagger example
 - No modification
 
+```bash
+$ swagger-merger -i ./example/heroku-pets/index.yaml
+$ swagger-merger -i ./example/heroku-pets/index.json
+```
+
 ### [echo](https://github.com/WindomZ/swagger-merger/tree/master/example/echo)
 
 - Official swagger example
 - Modify to support for `$ref` tags
 
+```bash
+$ swagger-merger -i ./example/echo/index.yaml
+$ swagger-merger -i ./example/echo/index.json
+```
+
 ### [petstore_simple](https://github.com/WindomZ/swagger-merger/tree/master/example/petstore_simple)
 
 - Official swagger example
 - Modify to support for `$ref#`* tags
+
+```bash
+$ swagger-merger -i ./example/petstore_simple/index.yaml
+$ swagger-merger -i ./example/petstore_simple/index.json
+```
 
 ## License
 
