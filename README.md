@@ -1,5 +1,6 @@
 # swagger-merger
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/WindomZ/swagger-merger.svg)](https://greenkeeper.io/)
 [![Build Status](https://travis-ci.org/WindomZ/swagger-merger.svg?branch=master)](https://travis-ci.org/WindomZ/swagger-merger)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](https://opensource.org/licenses/MIT)
 [![Dependency](https://david-dm.org/WindomZ/swagger-merger.svg)](https://david-dm.org/WindomZ/swagger-merger)
@@ -15,6 +16,7 @@
 
 ## Features
 
+- [x] Command line interface.
 - [x] _Support_ **JSON**/**YAML** swagger files.
 - [x] _Merge_ ***multiple*** swagger files into ***a*** swagger file.
 
