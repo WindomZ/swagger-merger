@@ -1,11 +1,11 @@
 {
   "name": "swagger-merger",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Merge multiple swagger files into a swagger file, support JSON/YAML.",
   "preferGlobal": true,
-  "main": "./bin/swagger-merger",
+  "main": "index.js",
   "bin": {
-    "swagger-merger": "./bin/swagger-merger"
+    "swagger-merger": "./bin/swagger-merger.js"
   },
   "engines": {
     "node": ">= 0.6.x"
