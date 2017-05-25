@@ -2,7 +2,7 @@
 
 [![Greenkeeper badge](https://badges.greenkeeper.io/WindomZ/swagger-merger.svg)](https://greenkeeper.io/)
 [![Build Status](https://travis-ci.org/WindomZ/swagger-merger.svg?branch=master)](https://travis-ci.org/WindomZ/swagger-merger)
-[![License](https://img.shields.io/badge/license-Apache-green.svg)](https://www.apache.org/licenses/LICENSE-2.0.html)
+[![License](https://img.shields.io/badge/license-MIT-green.svg)](https://opensource.org/licenses/MIT)
 [![Dependency](https://david-dm.org/WindomZ/swagger-merger.svg)](https://david-dm.org/WindomZ/swagger-merger)
 [![Coverage Status](https://coveralls.io/repos/github/WindomZ/swagger-merger/badge.svg?branch=master)](https://coveralls.io/github/WindomZ/swagger-merger?branch=master)
 [![Standard - JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com/)
@@ -16,6 +16,7 @@
 
 ## Features
 
+- [x] Command line interface.
 - [x] _Support_ **JSON**/**YAML** swagger files.
 - [x] _Merge_ ***multiple*** swagger files into ***a*** swagger file.
 
@@ -44,6 +45,31 @@ $ swagger-merger -h
     --debug              debug mode, such as print error tracks
 ```
 
+### $ref
+
+Include a _single-level_ of swagger file.
+
+For example:
+```yaml
+parameters:
+    - $ref: "./name.yaml"
+    - $ref: "./year.yaml"
+```
+
+### $ref#*
+
+Include a _multi-level_ of swagger file.
+
+For example:
+```yaml
+paths:
+  $ref#pets: "./paths/pets.yaml"
+  $ref#pets-id: "./paths/pets-id.yaml"
+definitions:
+  $ref#pets: "./definitions/pets.yaml"
+  $ref#error: "./definitions/error.yaml"
+```
+
 ## Examples
 
 Run shell `./example/example.sh` for more help.
@@ -61,7 +87,7 @@ $ swagger-merger -i ./example/heroku-pets/index.json
 ### [echo](https://github.com/WindomZ/swagger-merger/tree/master/example/echo)
 
 - Official swagger example
-- Modify to support for `$ref` tags
+- Modify to support for [$ref](#ref) tags
 
 ```bash
 $ swagger-merger -i ./example/echo/index.yaml
@@ -71,7 +97,7 @@ $ swagger-merger -i ./example/echo/index.json
 ### [petstore_simple](https://github.com/WindomZ/swagger-merger/tree/master/example/petstore_simple)
 
 - Official swagger example
-- Modify to support for `$ref#`* tags
+- Modify to support for [$ref#*](#ref-1) tags
 
 ```bash
 $ swagger-merger -i ./example/petstore_simple/index.yaml
@@ -80,4 +106,4 @@ $ swagger-merger -i ./example/petstore_simple/index.json
 
 ## License
 
-The [Apache License 2.0](https://github.com/WindomZ/swagger-merger/blob/master/LICENSE)
+The [MIT License](https://github.com/WindomZ/swagger-merger/blob/master/LICENSE)

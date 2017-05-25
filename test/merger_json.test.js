@@ -1,6 +1,8 @@
 /**
  * Created by WindomZ on 17-4-12.
  */
+'use strict'
+
 const test = require('ava')
 
 const merger = require('../lib/merger_json')
