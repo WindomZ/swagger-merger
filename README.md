@@ -43,9 +43,9 @@ $ swagger-merger -h
     --debug              debug mode, such as print error tracks
 ```
 
-#### $ref
+### $ref
 
-Include a single-level of swagger file.
+Include a _single-level_ of swagger file.
 
 For example:
 ```yaml
@@ -54,9 +54,9 @@ parameters:
     - $ref: "./year.yaml"
 ```
 
-#### $ref#*
+### $ref#*
 
-Include a multi-level of swagger file.
+Include a _multi-level_ of swagger file.
 
 For example:
 ```yaml
@@ -85,7 +85,7 @@ $ swagger-merger -i ./example/heroku-pets/index.json
 ### [echo](https://github.com/WindomZ/swagger-merger/tree/master/example/echo)
 
 - Official swagger example
-- Modify to support for [$ref](#$ref) tags
+- Modify to support for [$ref](#ref) tags
 
 ```bash
 $ swagger-merger -i ./example/echo/index.yaml
@@ -95,7 +95,7 @@ $ swagger-merger -i ./example/echo/index.json
 ### [petstore_simple](https://github.com/WindomZ/swagger-merger/tree/master/example/petstore_simple)
 
 - Official swagger example
-- Modify to support for [$ref#*](#$ref#*) tags
+- Modify to support for [$ref#*](#ref-1) tags
 
 ```bash
 $ swagger-merger -i ./example/petstore_simple/index.yaml
