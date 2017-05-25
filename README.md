@@ -40,14 +40,14 @@ $ swagger-merger -h
     -h, --help           output usage information
     -V, --version        output the version number
     -i, --input <file>   input a main/entry JSON/YAML swagger file
-    -o, --output <file>  output a merged JSON/YAML swagger file
+    -o, --output <file>  output a merged JSON/YAML swagger file, default is `swagger.*`
     -c, --compact        compact JSON/YAML format string
     --debug              debug mode, such as print error tracks
 ```
 
 ### $ref
 
-Include a _single-level_ of swagger file.
+> Include a _single-level_ of swagger file.
 
 For example:
 ```yaml
@@ -58,7 +58,7 @@ parameters:
 
 ### $ref#*
 
-Include a _multi-level_ of swagger file.
+> Include a _multi-level_ of swagger file.
 
 For example:
 ```yaml
@@ -70,39 +70,68 @@ definitions:
   $ref#error: "./definitions/error.yaml"
 ```
 
+### CLI
+
+> How to use?
+
+```bash
+$ swagger-merger -i in.yaml                # Merge in.yaml into swagger.yaml
+$ swagger-merger -i in.yaml -o out.yaml    # Merge in.yaml into out.yaml
+$ swagger-merger -i in.yaml -o out.yaml -c # Merge in.yaml into out.yaml and compress it
+$ swagger-merger -i in.yaml -o out.json    # Merge in.yaml into out.json
+
+$ swagger-merger -i in.json                # Merge in.json into swagger.json
+$ swagger-merger -i in.json -o out.json    # Merge in.json into out.json
+$ swagger-merger -i in.json -o out.json -c # Merge in.json into out.json and compress it
+$ swagger-merger -i in.json -o out.yaml    # Merge in.json into out.yaml
+```
+
 ## Examples
 
-Run shell `./example/example.sh` for more help.
-
-### [heroku-pets](https://github.com/WindomZ/swagger-merger/tree/master/example/heroku-pets)
+### [./example/heroku-pets](https://github.com/WindomZ/swagger-merger/tree/master/example/heroku-pets)
 
 - Official swagger example
-- No modification
+- _No_ modification
 
 ```bash
 $ swagger-merger -i ./example/heroku-pets/index.yaml
 $ swagger-merger -i ./example/heroku-pets/index.json
 ```
 
-### [echo](https://github.com/WindomZ/swagger-merger/tree/master/example/echo)
+The correct result in `./example/heroku-pets`:
+
+- `swagger.json` same as `heroku-pets.json`.
+- `swagger.yaml` same as `heroku-pets.yaml`.
+
+### [./example/echo](https://github.com/WindomZ/swagger-merger/tree/master/example/echo)
 
 - Official swagger example
-- Modify to support for [$ref](#ref) tags
+- _Modify_ to support for [$ref](#ref) tags
 
 ```bash
 $ swagger-merger -i ./example/echo/index.yaml
 $ swagger-merger -i ./example/echo/index.json
 ```
 
-### [petstore_simple](https://github.com/WindomZ/swagger-merger/tree/master/example/petstore_simple)
+The correct result in `./example/echo`:
+
+- `swagger.json` same as `echo.json`.
+- `swagger.yaml` same as `echo.yaml`.
+
+### [./example/petstore_simple](https://github.com/WindomZ/swagger-merger/tree/master/example/petstore_simple)
 
 - Official swagger example
-- Modify to support for [$ref#*](#ref-1) tags
+- _Modify_ to support for [$ref#*](#ref-1) tags
 
 ```bash
 $ swagger-merger -i ./example/petstore_simple/index.yaml
 $ swagger-merger -i ./example/petstore_simple/index.json
 ```
+
+The correct result in `./example/petstore_simple`:
+
+- `swagger.json` same as `petstore_simple.json`.
+- `swagger.yaml` same as `petstore_simple.yaml`.
 
 ## License
 
