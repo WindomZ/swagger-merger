@@ -2,21 +2,23 @@
 
 [![Greenkeeper badge](https://badges.greenkeeper.io/WindomZ/swagger-merger.svg)](https://greenkeeper.io/)
 [![Build Status](https://travis-ci.org/WindomZ/swagger-merger.svg?branch=master)](https://travis-ci.org/WindomZ/swagger-merger)
-[![License](https://img.shields.io/badge/license-MIT-green.svg)](https://opensource.org/licenses/MIT)
-[![Dependency](https://david-dm.org/WindomZ/swagger-merger.svg)](https://david-dm.org/WindomZ/swagger-merger)
 [![Coverage Status](https://coveralls.io/repos/github/WindomZ/swagger-merger/badge.svg?branch=master)](https://coveralls.io/github/WindomZ/swagger-merger?branch=master)
+[![Dependency](https://david-dm.org/WindomZ/swagger-merger.svg)](https://david-dm.org/WindomZ/swagger-merger)
 [![Standard - JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com/)
+[![License](https://img.shields.io/badge/license-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
 > Merge **multiple** swagger files into **a** swagger file, support **JSON**/**YAML**.
 
 [![NPM](https://nodei.co/npm/swagger-merger.png)](https://nodei.co/npm/swagger-merger/)
 
 [![swagger-merger](https://img.shields.io/npm/v/swagger-merger.svg)](https://www.npmjs.com/package/swagger-merger)
-![status](https://img.shields.io/badge/status-stable-green.svg)
+[![status](https://img.shields.io/badge/status-stable-green.svg)](https://www.npmjs.com/package/swagger-merger)
 
 ## Features
 
-- [x] Command line interface.
+- [x] _$ref_ - A tag, include a _single-level_ of swagger file.
+- [x] _$ref#*_ - A tag, include a _multi-level_ of swagger file.
+- [x] _CLI_ - Command line interface.
 - [x] _Support_ **JSON**/**YAML** swagger files.
 - [x] _Merge_ ***multiple*** swagger files into ***a*** swagger file.
 
