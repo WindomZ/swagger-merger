@@ -8,7 +8,7 @@
     "swagger-merger": "./bin/swagger-merger.js"
   },
   "engines": {
-    "node": ">= 0.6.x"
+    "node": ">=6"
   },
   "scripts": {
     "test": "standard && nyc --reporter=lcov --reporter=text-lcov ava"
@@ -34,7 +34,7 @@
   },
   "devDependencies": {
     "ava": "^0.19.1",
-    "coveralls": "^2.13.0",
+    "coveralls": "^2.13.1",
     "nyc": "^11.0.0",
     "standard": "*"
   }
