@@ -14,7 +14,8 @@ program
   .version(require('../package.json').version)
   .usage('[-h] [-v] [-c] [-o file] <-i file | file>')
   .description('Merge multiple swagger files into a swagger file, just support JSON/YAML.')
-  .option('-i, --input <file>', 'input a main/entry JSON/YAML swagger file', /^.+\.(json|yaml|yml)$/gi, null)
+  .option('-i, --input <file>', 'input a main/entry JSON/YAML swagger file',
+    /^.+\.(json|yaml|yml)$/gi, null)
   .option('-o, --output <file>', 'output a merged JSON/YAML swagger file, default is `swagger.*`',
     /^.+\.(json|yaml|yml)$/gi, null)
   .option('-c, --compact', 'compact JSON/YAML format string', null, null)
