@@ -6,18 +6,18 @@
 
 const program = require('commander')
 
-const pkg = require('../package.json')
 const merger = require('../lib/merger')
 
 let noArgs = true
 
 program
-  .version(pkg.version)
+  .version(require('../package.json').version)
   .usage('[-h] [-v] [-c] [-o file] <-i file | file>')
   .description('Merge multiple swagger files into a swagger file, just support JSON/YAML.')
-  .option('-i, --input <file>', 'input a main/entry JSON/YAML swagger file', /^.+\.(json|yaml)$/gi, null)
+  .option('-i, --input <file>', 'input a main/entry JSON/YAML swagger file',
+    /^.+\.(json|yaml|yml)$/gi, null)
   .option('-o, --output <file>', 'output a merged JSON/YAML swagger file, default is `swagger.*`',
-    /^.+\.(json|yaml)$/gi, null)
+    /^.+\.(json|yaml|yml)$/gi, null)
   .option('-c, --compact', 'compact JSON/YAML format string', null, null)
   .option('--debug', 'debug mode, such as print error tracks', null, null)
   .action((file, options) => {

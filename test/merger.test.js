@@ -34,6 +34,12 @@ test('merger heroku-pets pass', async (t) => {
   }).then(() => {
     t.pass()
   }).catch(err => t.fail(err))
+
+  await merger({
+    input: './example/heroku-pets/index.yml'
+  }).then(() => {
+    t.pass()
+  }).catch(err => t.fail(err))
 })
 
 test('merger echo pass', async (t) => {
@@ -49,6 +55,12 @@ test('merger echo pass', async (t) => {
   }).then(() => {
     t.pass()
   }).catch(err => t.fail(err))
+
+  await merger({
+    input: './example/echo/index.yml'
+  }).then(() => {
+    t.pass()
+  }).catch(err => t.fail(err))
 })
 
 test('merger petstore_simple pass', async (t) => {
@@ -61,6 +73,12 @@ test('merger petstore_simple pass', async (t) => {
   await merger({
     input: './example/petstore_simple/index.json',
     output: './example/petstore_simple/swagger.json'
+  }).then(() => {
+    t.pass()
+  }).catch(err => t.fail(err))
+
+  await merger({
+    input: './example/petstore_simple/index.yml'
   }).then(() => {
     t.pass()
   }).catch(err => t.fail(err))
