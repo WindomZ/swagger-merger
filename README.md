@@ -19,7 +19,7 @@
 - [x] _$ref_ - A tag, include a _single-level_ of swagger file.
 - [x] _$ref#*_ - A tag, include a _multi-level_ of swagger file.
 - [x] _CLI_ - Command line interface.
-- [x] _Support_ **JSON**/**YAML** swagger files.
+- [x] _Support_ **JSON**/**YAML** swagger files(`.json`/`.yaml`/`.yml`).
 - [x] _Merge_ ***multiple*** swagger files into ***a*** swagger file.
 
 ## Installation
@@ -77,15 +77,15 @@ definitions:
 > How to use?
 
 ```bash
-$ swagger-merger -i in.yaml                # Merge in.yaml into swagger.yaml
-$ swagger-merger -i in.yaml -o out.yaml    # Merge in.yaml into out.yaml
-$ swagger-merger -i in.yaml -o out.yaml -c # Merge in.yaml into out.yaml and compress it
-$ swagger-merger -i in.yaml -o out.json    # Merge in.yaml into out.json
+swagger-merger -i in.yaml                # Merge in.yaml into swagger.yaml
+swagger-merger -i in.yaml -o out.yaml    # Merge in.yaml into out.yaml
+swagger-merger -i in.yaml -o out.yaml -c # Merge in.yaml into out.yaml and compress it
+swagger-merger -i in.yaml -o out.json    # Merge in.yaml into out.json
 
-$ swagger-merger -i in.json                # Merge in.json into swagger.json
-$ swagger-merger -i in.json -o out.json    # Merge in.json into out.json
-$ swagger-merger -i in.json -o out.json -c # Merge in.json into out.json and compress it
-$ swagger-merger -i in.json -o out.yaml    # Merge in.json into out.yaml
+swagger-merger -i in.json                # Merge in.json into swagger.json
+swagger-merger -i in.json -o out.json    # Merge in.json into out.json
+swagger-merger -i in.json -o out.json -c # Merge in.json into out.json and compress it
+swagger-merger -i in.json -o out.yaml    # Merge in.json into out.yaml
 ```
 
 ## Examples
@@ -96,8 +96,8 @@ $ swagger-merger -i in.json -o out.yaml    # Merge in.json into out.yaml
 - _No_ modification
 
 ```bash
-$ swagger-merger -i ./example/heroku-pets/index.yaml
-$ swagger-merger -i ./example/heroku-pets/index.json
+swagger-merger -i ./example/heroku-pets/index.yaml
+swagger-merger -i ./example/heroku-pets/index.json
 ```
 
 The correct result in `./example/heroku-pets`:
@@ -111,8 +111,8 @@ The correct result in `./example/heroku-pets`:
 - _Modify_ to support for [$ref](#ref) tags
 
 ```bash
-$ swagger-merger -i ./example/echo/index.yaml
-$ swagger-merger -i ./example/echo/index.json
+swagger-merger -i ./example/echo/index.yaml
+swagger-merger -i ./example/echo/index.json
 ```
 
 The correct result in `./example/echo`:
@@ -126,8 +126,8 @@ The correct result in `./example/echo`:
 - _Modify_ to support for [$ref#*](#ref-1) tags
 
 ```bash
-$ swagger-merger -i ./example/petstore_simple/index.yaml
-$ swagger-merger -i ./example/petstore_simple/index.json
+swagger-merger -i ./example/petstore_simple/index.yaml
+swagger-merger -i ./example/petstore_simple/index.json
 ```
 
 The correct result in `./example/petstore_simple`:
