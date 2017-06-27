@@ -83,3 +83,24 @@ test('merger petstore_simple pass', async (t) => {
     t.pass()
   }).catch(err => t.fail(err))
 })
+
+test('merger petstore_domain pass', async (t) => {
+  await merger({
+    input: './example/petstore_domain/index.yaml'
+  }).then(() => {
+    t.pass()
+  }).catch(err => t.fail(err))
+
+  await merger({
+    input: './example/petstore_domain/index.json',
+    output: './example/petstore_domain/swagger.json'
+  }).then(() => {
+    t.pass()
+  }).catch(err => t.fail(err))
+
+  await merger({
+    input: './example/petstore_domain/index.yml'
+  }).then(() => {
+    t.pass()
+  }).catch(err => t.fail(err))
+})
