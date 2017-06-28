@@ -22,7 +22,7 @@
 - [x] _Support_ **JSON**/**YAML** swagger files(`.json`/`.yaml`/`.yml`).
 - [x] _Merge_ ***multiple*** swagger files into ***a*** swagger file.
 
-## Installation
+## Install
 
 ```bash
 npm install -g swagger-merger
@@ -143,7 +143,7 @@ swagger-merger -i index.json
 
 - Same as [petstore_simple](#examplepetstore_simple)
 - _Modify_ to support for [$ref](#ref) tags
-- _Modify_ to support for multiple levels schema
+- _Modify_ to support for **multiple levels** schema
 - For more help, see the [README](https://github.com/WindomZ/swagger-merger/tree/master/example/petstore_domain/README.md#readme)
 
 Go to `./example/petstore_simple`, run the following script: 
