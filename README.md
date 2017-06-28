@@ -90,51 +90,77 @@ swagger-merger -i in.json -o out.yaml    # Merge in.json into out.yaml
 
 ## Examples
 
+how to use? It would be more helpful to see this examples.
+
 ### [./example/heroku-pets](https://github.com/WindomZ/swagger-merger/tree/master/example/heroku-pets)
 
 - Official swagger example
 - _No_ modification
+- For more help, see the [README](https://github.com/WindomZ/swagger-merger/tree/master/example/heroku-pets/README.md#readme)
 
+Go to `./example/heroku-pets`, run the following script: 
 ```bash
-swagger-merger -i ./example/heroku-pets/index.yaml
-swagger-merger -i ./example/heroku-pets/index.json
+swagger-merger -i index.yaml
+swagger-merger -i index.json
 ```
 
-The correct result in `./example/heroku-pets`:
-
-- `swagger.json` same as `heroku-pets.json`.
-- `swagger.yaml` same as `heroku-pets.yaml`.
+1. Output `swagger.json` to compare the expected `heroku-pets.json`.
+1. Output `swagger.yaml` to compare the expected `heroku-pets.yaml`.
 
 ### [./example/echo](https://github.com/WindomZ/swagger-merger/tree/master/example/echo)
 
-- Official swagger example
+- Base on official swagger example
 - _Modify_ to support for [$ref](#ref) tags
+- For more help, see the [README](https://github.com/WindomZ/swagger-merger/tree/master/example/echo/README.md#readme)
 
+Go to `./example/echo`, run the following script: 
 ```bash
-swagger-merger -i ./example/echo/index.yaml
-swagger-merger -i ./example/echo/index.json
+swagger-merger -i index.yaml
+swagger-merger -i index.json
 ```
 
-The correct result in `./example/echo`:
-
-- `swagger.json` same as `echo.json`.
-- `swagger.yaml` same as `echo.yaml`.
+1. Output `swagger.json` to compare the expected `echo.json`.
+1. Output `swagger.yaml` to compare the expected `echo.yaml`.
 
 ### [./example/petstore_simple](https://github.com/WindomZ/swagger-merger/tree/master/example/petstore_simple)
 
-- Official swagger example
+- Base on official swagger example
 - _Modify_ to support for [$ref#*](#ref-1) tags
+- For more help, see the [README](https://github.com/WindomZ/swagger-merger/tree/master/example/petstore_simple/README.md#readme)
 
+Go to `./example/petstore_simple`, run the following script: 
 ```bash
-swagger-merger -i ./example/petstore_simple/index.yaml
-swagger-merger -i ./example/petstore_simple/index.json
+swagger-merger -i index.yaml
+swagger-merger -i index.json
 ```
 
-The correct result in `./example/petstore_simple`:
+1. Output `swagger.json` to compare the expected `petstore_simple.json`.
+1. Output `swagger.yaml` to compare the expected `petstore_simple.yaml`.
 
-- `swagger.json` same as `petstore_simple.json`.
-- `swagger.yaml` same as `petstore_simple.yaml`.
+### [./example/petstore_domain](https://github.com/WindomZ/swagger-merger/tree/master/example/petstore_domain)
+
+> A way of using [$ref](#ref) instead of [$ref#*](#ref-1)
+
+- Same as [petstore_simple](#examplepetstore_simple)
+- _Modify_ to support for [$ref](#ref) tags
+- _Modify_ to support for multiple levels schema
+- For more help, see the [README](https://github.com/WindomZ/swagger-merger/tree/master/example/petstore_domain/README.md#readme)
+
+Go to `./example/petstore_simple`, run the following script: 
+```bash
+swagger-merger -i index.yaml
+swagger-merger -i index.json
+```
+
+1. Output `swagger.json` to compare the expected `petstore_simple.json`.
+1. Output `swagger.yaml` to compare the expected `petstore_simple.yaml`.
+
+## Development
+
+Welcome your **Star**, make pull requests, report bugs, suggest ideas and discuss **swagger-merger**.
+
+I would love to hear what you think about **swagger-merger** on [issues page](https://github.com/WindomZ/swagger-merger/issues).
 
 ## License
 
-The [MIT License](https://github.com/WindomZ/swagger-merger/blob/master/LICENSE)
+[MIT](https://github.com/WindomZ/swagger-merger/blob/master/LICENSE)
