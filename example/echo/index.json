@@ -1,53 +1,53 @@
 {
-    "swagger": "2.0",
-    "info": {
-        "version": "1.0.0",
-        "title": "Echo",
-        "description": "#### Echos back every URL, method, parameter and header\nFeel free to make a path or an operation and use **Try Operation** to test it. The echo server will\nrender back everything.\n"
-    },
-    "schemes": [
-        "http"
-    ],
-    "host": "mazimi-prod.apigee.net",
-    "basePath": "/echo",
-    "paths": {
-        "/": {
-            "get": {
-                "responses": {
-                    "200": {
-                        "description": "Echo GET"
-                    }
-                }
-            },
-            "post": {
-                "responses": {
-                    "200": {
-                        "description": "Echo POST"
-                    }
-                },
-                "parameters": [
-                    {
-                        "$ref": "./name.json"
-                    },
-                    {
-                        "$ref": "./year.json"
-                    }
-                ]
-            }
-        },
-        "/test-path/{id}": {
-            "parameters": [
-                {
-                    "$ref": "./id.json"
-                }
-            ],
-            "get": {
-                "responses": {
-                    "200": {
-                        "description": "Echo test-path"
-                    }
-                }
-            }
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "Echo",
+    "description": "#### Echos back every URL, method, parameter and header\nFeel free to make a path or an operation and use **Try Operation** to test it. The echo server will\nrender back everything.\n"
+  },
+  "schemes": [
+    "http"
+  ],
+  "host": "mazimi-prod.apigee.net",
+  "basePath": "/echo",
+  "paths": {
+    "/": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": "Echo GET"
+          }
         }
+      },
+      "post": {
+        "responses": {
+          "200": {
+            "description": "Echo POST"
+          }
+        },
+        "parameters": [
+          {
+            "$ref": "./name.json"
+          },
+          {
+            "$ref": "./year.json"
+          }
+        ]
+      }
+    },
+    "/test-path/{id}": {
+      "parameters": [
+        {
+          "$ref": "./id.json"
+        }
+      ],
+      "get": {
+        "responses": {
+          "200": {
+            "description": "Echo test-path"
+          }
+        }
+      }
     }
+  }
 }

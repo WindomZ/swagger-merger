@@ -1,0 +1,4 @@
+/pets:
+  $ref: ./pets/pets.yaml
+/pets/{id}:
+  $ref: ./pets/pets-id.yaml

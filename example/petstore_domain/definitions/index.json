@@ -1,0 +1,11 @@
+{
+  "pet": {
+    "$ref": "./pets/pet.yaml"
+  },
+  "newPet": {
+    "$ref": "./pets/new-pet.yaml"
+  },
+  "errorModel": {
+    "$ref": "./error/error.yaml"
+  }
+}

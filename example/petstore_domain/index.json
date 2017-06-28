@@ -27,11 +27,9 @@
     "application/json"
   ],
   "paths": {
-    "$ref#pets": "./paths/pets.json",
-    "$ref#pets-id": "./paths/pets-id.json"
+    "$ref": "./paths/index.json"
   },
   "definitions": {
-    "$ref#pets": "./definitions/pets.json",
-    "$ref#error": "./definitions/error.json"
+    "$ref": "./definitions/index.json"
   }
 }
