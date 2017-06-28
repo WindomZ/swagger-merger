@@ -90,7 +90,7 @@ swagger-merger -i in.json -o out.yaml    # Merge in.json into out.yaml
 
 ## Examples
 
-how to use? It would be more helpful to see this examples.
+> how to use? It would be more helpful to see this examples.
 
 ### [./example/heroku-pets](https://github.com/WindomZ/swagger-merger/tree/master/example/heroku-pets)
 
@@ -104,8 +104,8 @@ swagger-merger -i index.yaml
 swagger-merger -i index.json
 ```
 
-1. Output `swagger.json` to compare the expected `heroku-pets.json`.
-1. Output `swagger.yaml` to compare the expected `heroku-pets.yaml`.
+1. The output `swagger.json` is same as the expected `heroku-pets.json`.
+1. The output `swagger.yaml` is similar to the expected `heroku-pets.yaml`.
 
 ### [./example/echo](https://github.com/WindomZ/swagger-merger/tree/master/example/echo)
 
@@ -119,8 +119,8 @@ swagger-merger -i index.yaml
 swagger-merger -i index.json
 ```
 
-1. Output `swagger.json` to compare the expected `echo.json`.
-1. Output `swagger.yaml` to compare the expected `echo.yaml`.
+1. The output `swagger.json` is same as the expected `echo.json`.
+1. The output `swagger.yaml` is similar to the expected `echo.yaml`.
 
 ### [./example/petstore_simple](https://github.com/WindomZ/swagger-merger/tree/master/example/petstore_simple)
 
@@ -134,8 +134,8 @@ swagger-merger -i index.yaml
 swagger-merger -i index.json
 ```
 
-1. Output `swagger.json` to compare the expected `petstore_simple.json`.
-1. Output `swagger.yaml` to compare the expected `petstore_simple.yaml`.
+1. The output `swagger.json` is same as the expected `petstore_simple.json`.
+1. The output `swagger.yaml` is similar to the expected `petstore_simple.yaml`.
 
 ### [./example/petstore_domain](https://github.com/WindomZ/swagger-merger/tree/master/example/petstore_domain)
 
@@ -146,14 +146,14 @@ swagger-merger -i index.json
 - _Modify_ to support for **multiple levels** schema
 - For more help, see the [README](https://github.com/WindomZ/swagger-merger/tree/master/example/petstore_domain/README.md#readme)
 
-Go to `./example/petstore_simple`, run the following script: 
+Go to `./example/petstore_domain`, run the following script: 
 ```bash
 swagger-merger -i index.yaml
 swagger-merger -i index.json
 ```
 
-1. Output `swagger.json` to compare the expected `petstore_simple.json`.
-1. Output `swagger.yaml` to compare the expected `petstore_simple.yaml`.
+1. The output `swagger.json` is same as the expected `petstore_simple.json`.
+1. The output `swagger.yaml` is similar to the expected `petstore_simple.yaml`.
 
 ## Development
 
