@@ -3,6 +3,8 @@
  */
 'use strict'
 
+const fs = require('fs')
+
 const test = require('ava')
 
 const merger = require('../lib/merger')
@@ -40,6 +42,10 @@ test('merger heroku-pets pass', async (t) => {
   }).then(() => {
     t.pass()
   }).catch(err => t.fail(err))
+
+  // whether the results are expected
+  t.is('' + fs.readFileSync('./example/heroku-pets/swagger.json'),
+    '' + fs.readFileSync('./example/heroku-pets/heroku-pets.json'))
 })
 
 test('merger echo pass', async (t) => {
@@ -61,6 +67,10 @@ test('merger echo pass', async (t) => {
   }).then(() => {
     t.pass()
   }).catch(err => t.fail(err))
+
+  // whether the results are expected
+  t.is('' + fs.readFileSync('./example/echo/swagger.json'),
+    '' + fs.readFileSync('./example/echo/echo.json'))
 })
 
 test('merger petstore_simple pass', async (t) => {
@@ -82,6 +92,10 @@ test('merger petstore_simple pass', async (t) => {
   }).then(() => {
     t.pass()
   }).catch(err => t.fail(err))
+
+  // whether the results are expected
+  t.is('' + fs.readFileSync('./example/petstore_simple/swagger.json'),
+    '' + fs.readFileSync('./example/petstore_simple/petstore_simple.json'))
 })
 
 test('merger petstore_domain pass', async (t) => {
@@ -103,4 +117,8 @@ test('merger petstore_domain pass', async (t) => {
   }).then(() => {
     t.pass()
   }).catch(err => t.fail(err))
+
+  // whether the results are expected
+  t.is('' + fs.readFileSync('./example/petstore_domain/swagger.json'),
+    '' + fs.readFileSync('./example/petstore_domain/petstore_simple.json'))
 })
