@@ -7,5 +7,5 @@
 | example.sh | Example shell file |
 | heroku-pets.json | Official swagger example |
 | heroku-pets.yaml | Official swagger example |
-| index.json | Main entry swagger example |
-| index.yaml | Main entry swagger example |
+| index.json | Main entrypoint swagger example |
+| index.yaml | Main entrypoint swagger example |

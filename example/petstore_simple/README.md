@@ -11,5 +11,5 @@
 | paths/*.yaml | Link to $ref#* in index.yaml |
 | petstore_simple.json | Official swagger example |
 | petstore_simple.yaml | Official swagger example |
-| index.json | Main entry swagger example |
-| index.yaml | Main entry swagger example |
+| index.json | Main entrypoint swagger example |
+| index.yaml | Main entrypoint swagger example |
