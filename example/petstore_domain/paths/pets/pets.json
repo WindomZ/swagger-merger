@@ -8,7 +8,8 @@
       "text/xml",
       "text/html"
     ],
-    "parameters": [{
+    "parameters": [
+      {
         "name": "tags",
         "in": "query",
         "description": "tags to filter by",
@@ -52,15 +53,17 @@
     "produces": [
       "application/json"
     ],
-    "parameters": [{
-      "name": "pet",
-      "in": "body",
-      "description": "Pet to add to the store",
-      "required": true,
-      "schema": {
-        "$ref": "#/definitions/newPet"
+    "parameters": [
+      {
+        "name": "pet",
+        "in": "body",
+        "description": "Pet to add to the store",
+        "required": true,
+        "schema": {
+          "$ref": "#/definitions/newPet"
+        }
       }
-    }],
+    ],
     "responses": {
       "200": {
         "description": "pet response",

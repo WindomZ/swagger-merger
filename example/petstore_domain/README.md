@@ -13,9 +13,9 @@
 | definitions/pets/*.yaml | Link to $ref in definitions/index.yaml |
 | paths/index.json | Paths entrypoint |
 | paths/index.yaml | Paths entrypoint |
-| paths/pets/*.json | Link to $ref#* in paths/index.json |
-| paths/pets/*.yaml | Link to $ref#* in paths/index.yaml |
+| paths/pets/*.json | Link to $ref in paths/index.json |
+| paths/pets/*.yaml | Link to $ref in paths/index.yaml |
 | petstore_simple.json | Official swagger example |
 | petstore_simple.yaml | Official swagger example |
-| index.json | Main entry swagger example |
-| index.yaml | Main entry swagger example |
+| index.json | Main entrypoint swagger example |
+| index.yaml | Main entrypoint swagger example |
