@@ -49,7 +49,7 @@ $ swagger-merger -h
 
 ### $ref
 
-> Include a _single-level_ of swagger file.
+> Includes a _single-level_ of swagger file.
 
 For example:
 ```yaml
@@ -60,7 +60,7 @@ parameters:
 
 ### $ref#*
 
-> Include a _multi-level_ of swagger file.
+> Includes a _multi-level_ of swagger file.
 
 For example:
 ```yaml
@@ -90,7 +90,27 @@ swagger-merger -i in.json -o out.yaml    # Merge in.json into out.yaml
 
 ## Examples
 
-> how to use? It would be more helpful to see this examples.
+> how to use? It would be more helpful to see these examples.
+
+First, open the terminal, choose one of the following ways: 
+
+- [npm](https://www.npmjs.com/)
+    ```bash
+    npm install
+    npm run test
+    ```
+
+- [yarn](https://yarnpkg.com/)
+    ```bash
+    yarn
+    yarn run test
+    ```
+
+- [swagger-merger]((https://www.npmjs.com/package/swagger-merger)) - go to each examples directory path
+    ```bash
+    swagger-merger -i index.yaml
+    swagger-merger -i index.json
+    ```
 
 ### [./example/heroku-pets](https://github.com/WindomZ/swagger-merger/tree/master/example/heroku-pets)
 
@@ -98,12 +118,7 @@ swagger-merger -i in.json -o out.yaml    # Merge in.json into out.yaml
 - _No_ modification
 - For more help, see the [README](https://github.com/WindomZ/swagger-merger/tree/master/example/heroku-pets/README.md#readme)
 
-Go to `./example/heroku-pets`, run the following script: 
-```bash
-swagger-merger -i index.yaml
-swagger-merger -i index.json
-```
-
+Go to `./example/heroku-pets`
 1. The output `swagger.json` is same as the expected `heroku-pets.json`.
 1. The output `swagger.yaml` is similar to the expected `heroku-pets.yaml`.
 
@@ -113,12 +128,7 @@ swagger-merger -i index.json
 - _Modify_ to support for [$ref](#ref) tags
 - For more help, see the [README](https://github.com/WindomZ/swagger-merger/tree/master/example/echo/README.md#readme)
 
-Go to `./example/echo`, run the following script: 
-```bash
-swagger-merger -i index.yaml
-swagger-merger -i index.json
-```
-
+Go to `./example/echo`
 1. The output `swagger.json` is same as the expected `echo.json`.
 1. The output `swagger.yaml` is similar to the expected `echo.yaml`.
 
@@ -128,12 +138,7 @@ swagger-merger -i index.json
 - _Modify_ to support for [$ref#*](#ref-1) tags
 - For more help, see the [README](https://github.com/WindomZ/swagger-merger/tree/master/example/petstore_simple/README.md#readme)
 
-Go to `./example/petstore_simple`, run the following script: 
-```bash
-swagger-merger -i index.yaml
-swagger-merger -i index.json
-```
-
+Go to `./example/petstore_simple`
 1. The output `swagger.json` is same as the expected `petstore_simple.json`.
 1. The output `swagger.yaml` is similar to the expected `petstore_simple.yaml`.
 
@@ -146,20 +151,16 @@ swagger-merger -i index.json
 - _Modify_ to support for **multiple levels** schema
 - For more help, see the [README](https://github.com/WindomZ/swagger-merger/tree/master/example/petstore_domain/README.md#readme)
 
-Go to `./example/petstore_domain`, run the following script: 
-```bash
-swagger-merger -i index.yaml
-swagger-merger -i index.json
-```
-
+Go to `./example/petstore_domain`
 1. The output `swagger.json` is same as the expected `petstore_simple.json`.
 1. The output `swagger.yaml` is similar to the expected `petstore_simple.yaml`.
 
-## Development
+## Contributing
 
-Welcome your **Star**, make pull requests, report bugs, suggest ideas and discuss **swagger-merger**.
+Welcome to pull requests, report bugs, suggest ideas and discuss **swagger-merger**, 
+i would love to hear what you think about **swagger-merger** on [issues page](https://github.com/WindomZ/swagger-merger/issues).
 
-I would love to hear what you think about **swagger-merger** on [issues page](https://github.com/WindomZ/swagger-merger/issues).
+If you like it then you can put a :star: on it.
 
 ## License
 
