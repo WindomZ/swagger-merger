@@ -33,7 +33,7 @@
     "fmtconv": "^1.0.3"
   },
   "devDependencies": {
-    "ava": "^0.21.0",
+    "ava": "^0.22.0",
     "coveralls": "^2.13.1",
     "nyc": "^11.0.3",
     "standard": "*"
