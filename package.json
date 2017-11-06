@@ -29,13 +29,13 @@
   },
   "homepage": "https://github.com/WindomZ/swagger-merger#readme",
   "dependencies": {
-    "commander": "^2.10.0",
-    "fmtconv": "^1.0.3"
+    "commander": "^2.11.0",
+    "fmtconv": "^1.0.4"
   },
   "devDependencies": {
     "ava": "^0.23.0",
     "coveralls": "^3.0.0",
-    "nyc": "^11.0.3",
-    "standard": "*"
+    "nyc": "^11.3.0",
+    "standard": "^10.0.3"
   }
 }
