@@ -112,6 +112,8 @@ First, open the terminal, choose one of the following ways:
     swagger-merger -i index.json
     ```
 
+Then, these examples may help you:
+
 ### [./example/heroku-pets](https://github.com/WindomZ/swagger-merger/tree/master/example/heroku-pets)
 
 - Official swagger example
@@ -144,7 +146,7 @@ Go to `./example/petstore_simple`
 
 ### [./example/petstore_domain](https://github.com/WindomZ/swagger-merger/tree/master/example/petstore_domain)
 
-> A way of using [$ref](#ref) instead of [$ref#*](#ref-1)
+> A way of using [$ref](#ref) instead of [$ref#*](#ref-1), and better compatibility.
 
 - Same as [petstore_simple](#examplepetstore_simple)
 - _Modify_ to support for [$ref](#ref) tags
