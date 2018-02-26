@@ -29,7 +29,7 @@
   },
   "homepage": "https://github.com/WindomZ/swagger-merger#readme",
   "dependencies": {
-    "commander": "^2.14.0",
+    "commander": "^2.14.1",
     "fmtconv": "^1.0.4"
   },
   "devDependencies": {
