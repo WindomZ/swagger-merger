@@ -14,16 +14,12 @@
     "/": {
       "get": {
         "responses": {
-          "200": {
-            "description": "Echo GET"
-          }
+          "$ref": "./responses.json#/components/root/get"
         }
       },
       "post": {
         "responses": {
-          "200": {
-            "description": "Echo POST"
-          }
+          "$ref": "./responses.json#/components/root/post"
         },
         "parameters": [
           {
@@ -43,9 +39,7 @@
       ],
       "get": {
         "responses": {
-          "200": {
-            "description": "Echo test-path"
-          }
+          "$ref": "./responses.json#/components/test-path"
         }
       }
     }

@@ -15,12 +15,10 @@ paths:
   /:
     get:
       responses:
-        200:
-          description: Echo GET
+        $ref: "./responses.yaml#/components/root/get"
     post:
       responses:
-        200:
-          description: Echo POST
+        $ref: "./responses.yaml#/components/root/post"
       parameters:
         - $ref: "./name.yaml"
         - $ref: "./year.yaml"
@@ -29,5 +27,4 @@ paths:
       - $ref: "./id.yaml"
     get:
       responses:
-        200:
-          description: Echo test-path
+        $ref: "./responses.yaml#/components/test-path"
