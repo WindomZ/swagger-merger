@@ -1,6 +1,6 @@
 {
   "name": "swagger-merger",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Merge multiple swagger files into a swagger file, support JSON/YAML.",
   "preferGlobal": true,
   "main": "index.js",
@@ -29,8 +29,8 @@
   },
   "homepage": "https://github.com/WindomZ/swagger-merger#readme",
   "dependencies": {
-    "commander": "^2.14.0",
-    "fmtconv": "^1.0.4"
+    "commander": "^2.14.1",
+    "fmtconv": "^1.0.5"
   },
   "devDependencies": {
     "ava": "^0.25.0",

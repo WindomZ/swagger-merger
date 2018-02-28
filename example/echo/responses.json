@@ -1,0 +1,21 @@
+{
+  "components": {
+    "root": {
+      "get": {
+        "200": {
+          "description": "Echo GET"
+        }
+      },
+      "post": {
+        "200": {
+          "description": "Echo POST"
+        }
+      }
+    },
+    "test-path": {
+      "200": {
+        "description": "Echo test-path"
+      }
+    }
+  }
+}
