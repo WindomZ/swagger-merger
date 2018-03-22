@@ -37,5 +37,13 @@ package-lock.json
 # Optional REPL history
 .node_repl_history
 
-.idea/
+# IntelliJ project files
+.idea
 *.iml
+out
+gen
+
+# Examples
+swagger*.yaml
+swagger*.yml
+swagger*.json

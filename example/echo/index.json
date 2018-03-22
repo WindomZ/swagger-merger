@@ -8,7 +8,7 @@
   "schemes": [
     "http"
   ],
-  "host": "mazimi-prod.apigee.net",
+  "$ref": "./host.yaml",
   "basePath": "/echo",
   "paths": {
     "/": {
