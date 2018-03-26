@@ -12,6 +12,9 @@
 
 ### Related Files
 
+- host.json
+- host.yaml
+
 - name.json
 - name.yaml
 
@@ -51,6 +54,8 @@ the content is same as `echo.yaml`.
 | example.sh | Example shell file |
 | echo.json | Official swagger example |
 | echo.yaml | Official swagger example |
+| host.json | Link to $ref in index.json |
+| host.yaml | Link to $ref in index.yaml |
 | id.json | Link to $ref in index.json |
 | id.yaml | Link to $ref in index.yaml |
 | index.json | Main entrypoint swagger example |

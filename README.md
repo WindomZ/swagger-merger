@@ -15,11 +15,11 @@
 [![status](https://img.shields.io/badge/status-stable-green.svg)](https://www.npmjs.com/package/swagger-merger)
 
 ## Features
-- [x] _$ref_ - A tag, include a _single-level_ of swagger file.
-- [x] _$ref#*_ - A tag, include a _multi-level_ of swagger file.
-- [x] _CLI_ - Command line interface.
-- [x] _Support_ **JSON**/**YAML** swagger files(`.json`/`.yaml`/`.yml`).
 - [x] _Merge_ ***multiple*** swagger files into ***a*** swagger file.
+- [x] _$ref_ - A tag, include a **single-level** of swagger file.
+- [x] _$ref#*_ - A tag, include a **multi-level** of swagger file.
+- [x] _Support_ **JSON**/**YAML** swagger files(`.json`/`.yaml`/`.yml`).
+- [x] _CLI_ - Command line interface.
 
 ## Install
 ```bash
@@ -49,10 +49,13 @@ $ swagger-merger -h
 
 For example:
 ```yaml
+$ref: "./host.yaml"
 parameters:
-    - $ref: "./name.yaml"
-    - $ref: "./year.yaml"
-    - $ref: "./age.yaml#/alex/son"
+  - $ref: "./name.yaml"
+  - $ref: "./year.yaml"
+  - $ref: "./age.yaml#/alex/son"
+responses:
+  $ref: "./responses.yaml#/post"
 ```
 
 ### $ref#*
@@ -111,7 +114,6 @@ Then, these examples may help you:
 ### [./example/heroku-pets](https://github.com/WindomZ/swagger-merger/tree/master/example/heroku-pets)
 - Official swagger example
 - _No_ modification
-- For more help, see the [README](https://github.com/WindomZ/swagger-merger/tree/master/example/heroku-pets/README.md#readme)
 
 Go to `./example/heroku-pets`
 1. The output `swagger.json` is same as the expected `heroku-pets.json`.
@@ -120,7 +122,6 @@ Go to `./example/heroku-pets`
 ### [./example/echo](https://github.com/WindomZ/swagger-merger/tree/master/example/echo)
 - Base on official swagger example
 - _Modify_ to support for [$ref](#ref) tags
-- For more help, see the [README](https://github.com/WindomZ/swagger-merger/tree/master/example/echo/README.md#readme)
 
 Go to `./example/echo`
 1. The output `swagger.json` is same as the expected `echo.json`.
@@ -129,7 +130,6 @@ Go to `./example/echo`
 ### [./example/petstore_simple](https://github.com/WindomZ/swagger-merger/tree/master/example/petstore_simple)
 - Base on official swagger example
 - _Modify_ to support for [$ref#*](#ref-1) tags
-- For more help, see the [README](https://github.com/WindomZ/swagger-merger/tree/master/example/petstore_simple/README.md#readme)
 
 Go to `./example/petstore_simple`
 1. The output `swagger.json` is same as the expected `petstore_simple.json`.
@@ -141,7 +141,6 @@ Go to `./example/petstore_simple`
 - Same as [petstore_simple](#examplepetstore_simple)
 - _Modify_ to support for [$ref](#ref) tags
 - _Modify_ to support for **multiple levels** schema
-- For more help, see the [README](https://github.com/WindomZ/swagger-merger/tree/master/example/petstore_domain/README.md#readme)
 
 Go to `./example/petstore_domain`
 1. The output `swagger.json` is same as the expected `petstore_simple.json`.
