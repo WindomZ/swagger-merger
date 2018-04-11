@@ -33,6 +33,8 @@ parameters:
   - $ref: "./name.yaml"
   - $ref: "./year.yaml"
   - $ref: "./age.yaml#/alex/son"
+remote:
+  $ref: "https://github.com/WindomZ/swagger-merger/remote.yaml#/name"
 responses:
   $ref: "./responses.yaml#/post"
 ```
