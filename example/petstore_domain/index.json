@@ -17,9 +17,9 @@
   },
   "host": "petstore.swagger.io",
   "basePath": "/api",
-  "schemes": [
-    "http"
-  ],
+  "schemes": {
+    "$ref": "https://raw.githubusercontent.com/swagger-api/swagger-codegen/master/modules/swagger-codegen/src/test/resources/2_0/petstore.json#schemes"
+  },
   "consumes": [
     "application/json"
   ],
