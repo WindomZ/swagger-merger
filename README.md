@@ -34,7 +34,7 @@ parameters:
   - $ref: "./year.yaml"
   - $ref: "./age.yaml#/alex/son"
 remote:
-  $ref: "https://github.com/WindomZ/swagger-merger/remote.yaml#/name"
+  $ref: "https://raw.githubusercontent.com/WindomZ/swagger-merger/remote.yaml#/name"
 responses:
   $ref: "./responses.yaml#/post"
 ```
@@ -48,8 +48,8 @@ paths:
   $ref#pets: "./paths/pets.yaml"
   $ref#pets-id: "./paths/pets-id.yaml"
 definitions:
-  $ref#pets: "https://github.com/WindomZ/swagger-merger/pets.yaml"
-  $ref#error: "https://github.com/WindomZ/swagger-merger/error.yaml"
+  $ref#pets: "https://raw.githubusercontent.com/WindomZ/swagger-merger/pets.yaml"
+  $ref#error: "https://raw.githubusercontent.com/WindomZ/swagger-merger/error.yaml"
 ```
 
 ### CLI
