@@ -48,8 +48,8 @@ paths:
   $ref#pets: "./paths/pets.yaml"
   $ref#pets-id: "./paths/pets-id.yaml"
 definitions:
-  $ref#pets: "./definitions/pets.yaml"
-  $ref#error: "./definitions/error.yaml"
+  $ref#pets: "https://github.com/WindomZ/swagger-merger/pets.yaml"
+  $ref#error: "https://github.com/WindomZ/swagger-merger/error.yaml"
 ```
 
 ### CLI

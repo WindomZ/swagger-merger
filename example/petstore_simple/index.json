@@ -31,7 +31,7 @@
     "$ref#pets-id": "./paths/pets-id.json"
   },
   "definitions": {
-    "$ref#pets": "./definitions/pets.json",
-    "$ref#error": "./definitions/error.json"
+    "$ref#pets": "https://raw.githubusercontent.com/WindomZ/swagger-merger/master/example/petstore_simple/definitions/pets.json",
+    "$ref#error": "https://raw.githubusercontent.com/WindomZ/swagger-merger/master/example/petstore_simple/definitions/error.json"
   }
 }
