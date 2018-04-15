@@ -6,20 +6,17 @@
     "description": "A sample API that uses a petstore as an example to demonstrate features in the swagger-2.0 specification",
     "termsOfService": "http://helloreverb.com/terms/",
     "contact": {
-      "name": "Swagger API team",
-      "email": "foo@example.com",
-      "url": "http://swagger.io"
+      "$ref": "https://raw.githubusercontent.com/WindomZ/swagger-merger/master/example/petstore_domain/petstore_simple.json#info/contact"
     },
     "license": {
-      "name": "MIT",
-      "url": "http://opensource.org/licenses/MIT"
+      "$ref": "https://raw.githubusercontent.com/WindomZ/swagger-merger/master/example/petstore_domain/petstore_simple.json#info/license"
     }
   },
   "host": "petstore.swagger.io",
   "basePath": "/api",
-  "schemes": [
-    "http"
-  ],
+  "schemes": {
+    "$ref": "https://raw.githubusercontent.com/WindomZ/swagger-merger/master/example/petstore_domain/petstore_simple.json#schemes"
+  },
   "consumes": [
     "application/json"
   ],
