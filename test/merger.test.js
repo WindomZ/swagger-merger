@@ -101,6 +101,7 @@ test.serial('merger petstore_simple pass', async (t) => {
 })
 
 test.serial('merger petstore_domain pass', async (t) => {
+  // make temp directory for testing
   let dir = path.join(os.tmpdir(), 'swagger-merger')
   try {
     if (!fs.existsSync(dir)) {
@@ -122,6 +123,7 @@ test.serial('merger petstore_domain pass', async (t) => {
     t.pass()
   }).catch(err => t.fail(err))
 
+  // clean temp directory
   if (fs.existsSync(dir)) {
     fs.rmdir(dir, () => {
       t.pass()
@@ -151,11 +153,3 @@ test.serial('merger petstore_domain pass', async (t) => {
   t.is('' + fs.readFileSync('./example/petstore_domain/swagger.json'),
     '' + fs.readFileSync('./example/petstore_domain/petstore_simple.json'))
 })
-
-// test.after('cleanup', async (t) => {
-//   await merger({
-//     input: './example/petstore_domain/index.yaml'
-//   }).then(() => {
-//     t.pass()
-//   }).catch(err => t.fail(err))
-// });
