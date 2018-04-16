@@ -23,6 +23,12 @@ test.serial('merger fail', async (t) => {
   }).then(() => {
     t.fail('should be catch error 2')
   }).catch(() => t.pass())
+
+  await merger({
+    input: './test/error.yaml'
+  }).then(() => {
+    t.fail('should be catch error 3')
+  }).catch(() => t.pass())
 })
 
 test.serial('merger heroku-pets pass', async (t) => {

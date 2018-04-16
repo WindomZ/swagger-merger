@@ -1,0 +1,24 @@
+swagger: '2.0'
+info:
+  version: '1.0.0'
+  title: Swagger Petstore (Simple)
+  description: A sample API that uses a petstore as an example to demonstrate features in the swagger-2.0 specification
+  termsOfService: http://helloreverb.com/terms/
+  contact:
+    $ref: "https://raw.githubusercontent.com/WindomZ/swagger-merger/master/404.yaml"
+  license:
+    $ref#license: "https://raw.githubusercontent.com/WindomZ/swagger-merger/master/404.yaml#info/license"
+host: petstore.swagger.io
+basePath: /api
+schemes:
+  $ref: "./empty.yaml"
+consumes:
+  $ref: "https://raw.githubusercontent.com/WindomZ/swagger-merger/master/404.md"
+produces:
+  - application/json
+paths:
+  $ref#pets: "./pets.yaml"
+  $ref#pets-id: "./empty.yaml"
+definitions:
+  $ref#pets: "./empty.yaml"
+  $ref#error: "https://raw.githubusercontent.com/WindomZ/swagger-merger/dev/test/empty.yaml"
