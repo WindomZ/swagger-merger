@@ -20,5 +20,5 @@ paths:
   $ref#pets: "./paths/pets.yaml"
   $ref#pets-id: "./paths/pets-id.yaml"
 definitions:
-  $ref#pets: "https://raw.githubusercontent.com/WindomZ/swagger-merger/master/example/petstore_simple/definitions/pets.yml"
-  $ref#error: "https://raw.githubusercontent.com/WindomZ/swagger-merger/master/example/petstore_simple/definitions/error.yml"
+  $ref#pets: "https://raw.githubusercontent.com/WindomZ/swagger-merger/master/example/petstore_simple/definitions/pets.yaml"
+  $ref#error: "https://raw.githubusercontent.com/WindomZ/swagger-merger/master/example/petstore_simple/definitions/error.yaml"
