@@ -1094,10 +1094,6 @@ combined-stream@^1.0.5, combined-stream@~1.0.5:
   dependencies:
     delayed-stream "~1.0.0"
 
-commander@^2.14.1:
-  version "2.14.1"
-  resolved "https://registry.yarnpkg.com/commander/-/commander-2.14.1.tgz#2235123e37af8ca3c65df45b026dbd357b01b9aa"
-
 commander@^2.15.1:
   version "2.15.1"
   resolved "https://registry.yarnpkg.com/commander/-/commander-2.15.1.tgz#df46e867d0fc2aec66a34662b406a9ccafff5b0f"
@@ -1826,12 +1822,12 @@ flat-cache@^1.2.1:
     graceful-fs "^4.1.2"
     write "^0.2.1"
 
-fmtconv@^1.0.5:
-  version "1.0.5"
-  resolved "https://registry.yarnpkg.com/fmtconv/-/fmtconv-1.0.5.tgz#d12894e6ff3d0a0dd3fd5872cbcc050faa385105"
+fmtconv@^1.0.6:
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/fmtconv/-/fmtconv-1.0.6.tgz#0a22c880f6b3ca691e83781ca9bd6ab69f09d30f"
   dependencies:
-    commander "^2.14.1"
-    js-yaml "^3.10.0"
+    commander "^2.15.1"
+    js-yaml "^3.11.0"
 
 fn-name@^2.0.0:
   version "2.0.1"
@@ -2680,6 +2676,13 @@ js-tokens@^3.0.0:
 js-yaml@^3.10.0, js-yaml@^3.6.1, js-yaml@^3.9.1:
   version "3.10.0"
   resolved "https://registry.yarnpkg.com/js-yaml/-/js-yaml-3.10.0.tgz#2e78441646bd4682e963f22b6e92823c309c62dc"
+  dependencies:
+    argparse "^1.0.7"
+    esprima "^4.0.0"
+
+js-yaml@^3.11.0:
+  version "3.11.0"
+  resolved "https://registry.yarnpkg.com/js-yaml/-/js-yaml-3.11.0.tgz#597c1a8bd57152f26d622ce4117851a51f5ebaef"
   dependencies:
     argparse "^1.0.7"
     esprima "^4.0.0"
