@@ -26,6 +26,9 @@
 ### $ref
 > Includes a _single-level_ of swagger file.
 
+- [Official standards](https://swagger.io/docs/specification/using-ref/)
+- Recommended, universal
+
 For example:
 ```yaml
 $ref: "./host.yaml"
@@ -41,6 +44,9 @@ responses:
 
 ### $ref#*
 > Includes a _multi-level_ of swagger file.
+
+- Non-standard, suggest you use it for yourself
+- Instead of `$ref`, can be used _side by side_ and not an array
 
 For example:
 ```yaml
