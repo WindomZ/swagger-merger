@@ -21,4 +21,4 @@ paths:
   $ref#pets-id: "./empty.yaml"
 definitions:
   $ref#pets: "./empty.yaml"
-  $ref#error: "https://raw.githubusercontent.com/WindomZ/swagger-merger/dev/test/empty.yaml"
+  $ref#error: "https://raw.githubusercontent.com/WindomZ/swagger-merger/master/test/empty.yaml"

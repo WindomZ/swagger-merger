@@ -23,12 +23,24 @@ test.serial('merger fail', async (t) => {
   }).then(() => {
     t.fail('should be catch error 2')
   }).catch(() => t.pass())
+})
+
+test.serial('merger pass', async (t) => {
+  await merger({
+    input: './test/404.yaml'
+  }).then(() => {
+    t.pass()
+  }).catch(err => t.fail(err))
 
   await merger({
-    input: './test/error.yaml'
+    input: './test/in.yaml'
   }).then(() => {
-    t.fail('should be catch error 3')
-  }).catch(() => t.pass())
+    t.pass()
+  }).catch(err => t.fail(err))
+
+  // whether the results are expected
+  t.is('' + fs.readFileSync('./test/out.yaml'),
+    '' + fs.readFileSync('./test/swagger.yaml'))
 })
 
 test.serial('merger heroku-pets pass', async (t) => {
