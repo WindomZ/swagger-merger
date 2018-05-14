@@ -19,6 +19,7 @@ produces:
 paths:
   $ref#pets: "./paths/pets.yaml"
   $ref#pets-id: "./paths/pets-id.yaml"
+  $ref#noext: "./no_ext_yaml"
 definitions:
   $ref#pets: "https://raw.githubusercontent.com/WindomZ/swagger-merger/pets.yaml"
   $ref#error: "https://raw.githubusercontent.com/WindomZ/swagger-merger/master/example/petstore_simple/definitions/error.yaml"

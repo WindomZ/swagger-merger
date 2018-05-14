@@ -22,6 +22,10 @@ produces:
 paths:
   '$ref#pets': ./paths/pets.yaml
   '$ref#pets-id': ./paths/pets-id.yaml
+  /pets:
+    hello: world
+  '/pets/{id}':
+    good: bye
 definitions:
   '$ref#pets': 'https://raw.githubusercontent.com/WindomZ/swagger-merger/pets.yaml'
   errorModel:
