@@ -51,6 +51,28 @@ test.serial('merger pass', async (t) => {
   // whether the results are expected
   t.is('' + fs.readFileSync('./test/out.json'),
     '' + fs.readFileSync('./test/swagger.json'))
+
+  await merger({
+    input: './test/in.yaml',
+    output: './test/out.json'
+  }).then(() => {
+    t.pass()
+  }).catch(err => t.fail(err))
+
+  // whether the results are expected
+  t.is('' + fs.readFileSync('./test/out.json'),
+    '' + fs.readFileSync('./test/swagger.json'))
+
+  await merger({
+    input: './test/in.json',
+    output: './test/out.yaml'
+  }).then(() => {
+    t.pass()
+  }).catch(err => t.fail(err))
+
+  // whether the results are expected
+  t.is('' + fs.readFileSync('./test/out.yaml'),
+    '' + fs.readFileSync('./test/swagger.yaml'))
 })
 
 test.serial('merger heroku-pets pass', async (t) => {
