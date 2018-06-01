@@ -24,8 +24,8 @@
     "application/json"
   ],
   "paths": {
-    "$ref#pets": "./paths/pets.json",
-    "$ref#pets-id": "./paths/pets-id.json",
+    "$ref#pets": "./paths/pets",
+    "$ref#pets-id": "./paths/pets-id",
     "$ref#noext": "./no_ext_json"
   },
   "definitions": {
