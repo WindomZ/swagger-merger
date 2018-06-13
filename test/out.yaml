@@ -7,7 +7,9 @@ info:
     the swagger-2.0 specification
   termsOfService: 'http://helloreverb.com/terms/'
   contact:
-    $ref: 'https://raw.githubusercontent.com/WindomZ/swagger-merger/example'
+    name: Swagger API team
+    email: foo@example.com
+    url: 'http://swagger.io'
   license:
     name: MIT
     url: 'http://opensource.org/licenses/MIT'
@@ -21,7 +23,7 @@ produces:
   - application/json
 paths:
   '$ref#pets': ./paths/pets
-  '$ref#pets-id': ./paths/pets-id
+  '$ref#pets-id': 'https://raw.githubusercontent.com/WindomZ/swagger-merger/pets-id'
   /pets:
     hello: world
   '/pets/{id}':
