@@ -34,7 +34,8 @@
     },
     "/pets/{id}": {
       "good": "bye"
-    }
+    },
+    "$ref#wrong-ext": "./wrong_ext.xml"
   },
   "definitions": {
     "$ref#pets": "https://raw.githubusercontent.com/WindomZ/swagger-merger/pets.yaml",

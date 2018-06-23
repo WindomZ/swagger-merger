@@ -26,7 +26,8 @@
   "paths": {
     "$ref#pets": "./paths/pets",
     "$ref#pets-id": "https://raw.githubusercontent.com/WindomZ/swagger-merger/pets-id",
-    "$ref#noext": "./no_ext_json"
+    "$ref#no-ext": "./no_ext_json",
+    "$ref#wrong-ext": "./wrong_ext.xml"
   },
   "definitions": {
     "$ref#pets": "https://raw.githubusercontent.com/WindomZ/swagger-merger/pets.yaml",
