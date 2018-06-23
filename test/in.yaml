@@ -16,6 +16,8 @@ consumes:
   - application/json
 produces:
   - application/json
+wrong-ext:
+  $ref: ./wrong_ext.xml
 paths:
   $ref#pets: "./paths/pets"
   $ref#pets-id: "https://raw.githubusercontent.com/WindomZ/swagger-merger/pets-id"
