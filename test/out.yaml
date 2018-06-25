@@ -7,7 +7,9 @@ info:
     the swagger-2.0 specification
   termsOfService: 'http://helloreverb.com/terms/'
   contact:
-    $ref: 'https://raw.githubusercontent.com/WindomZ/swagger-merger/example'
+    name: Swagger API team
+    email: foo@example.com
+    url: 'http://swagger.io'
   license:
     name: MIT
     url: 'http://opensource.org/licenses/MIT'
@@ -19,9 +21,16 @@ consumes:
   - application/json
 produces:
   - application/json
+wrong-ext:
+  $ref: ./wrong_ext.xml
 paths:
-  '$ref#pets': ./paths/pets.yaml
-  '$ref#pets-id': ./paths/pets-id.yaml
+  '$ref#pets': ./paths/pets
+  '$ref#pets-id': 'https://raw.githubusercontent.com/WindomZ/swagger-merger/pets-id'
+  /pets:
+    hello: world
+  '/pets/{id}':
+    good: bye
+  '$ref#wrong-ext': ./wrong_ext.xml
 definitions:
   '$ref#pets': 'https://raw.githubusercontent.com/WindomZ/swagger-merger/pets.yaml'
   errorModel:

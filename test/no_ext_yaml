@@ -1,0 +1,4 @@
+/pets:
+  hello: world
+/pets/{id}:
+  good: bye

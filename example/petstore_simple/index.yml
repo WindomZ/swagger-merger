@@ -17,8 +17,8 @@ consumes:
 produces:
   - application/json
 paths:
-  $ref#pets: "./paths/pets.yaml"
-  $ref#pets-id: "./paths/pets-id.yaml"
+  $ref#pets: "./paths/pets.yml"
+  $ref#pets-id: "./paths/pets-id.yml"
 definitions:
   $ref#pets: "https://raw.githubusercontent.com/WindomZ/swagger-merger/master/example/petstore_simple/definitions/pets.yaml"
   $ref#error: "https://raw.githubusercontent.com/WindomZ/swagger-merger/master/example/petstore_simple/definitions/error.yaml"
