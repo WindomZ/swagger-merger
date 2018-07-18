@@ -31,12 +31,12 @@
   "dependencies": {
     "async": "^2.6.1",
     "co": "^4.6.0",
-    "commander": "^2.15.1",
+    "commander": "^2.16.0",
     "fmtconv": "^1.0.6"
   },
   "devDependencies": {
     "ava": "^0.25.0",
-    "coveralls": "^3.0.1",
+    "coveralls": "^3.0.2",
     "nyc": "^12.0.1",
     "standard": "^11.0.1"
   }
