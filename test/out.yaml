@@ -11,8 +11,8 @@ info:
     email: foo@example.com
     url: 'http://swagger.io'
   license1:
-    '$ref#license': >-
-      https://raw.githubusercontent.com/WindomZ/swagger-merger/master/example/petstore_simple/petstore_simple.yaml#info/license
+    name: MIT
+    url: 'http://opensource.org/licenses/MIT'
   license2:
     name: MIT
     url: 'http://opensource.org/licenses/MIT'
