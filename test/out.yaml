@@ -10,7 +10,13 @@ info:
     name: Swagger API team
     email: foo@example.com
     url: 'http://swagger.io'
-  license:
+  license1:
+    name: MIT
+    url: 'http://opensource.org/licenses/MIT'
+  license2:
+    name: MIT
+    url: 'http://opensource.org/licenses/MIT'
+  license3:
     name: MIT
     url: 'http://opensource.org/licenses/MIT'
 host: petstore.swagger.io

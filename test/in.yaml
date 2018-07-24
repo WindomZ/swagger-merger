@@ -6,8 +6,12 @@ info:
   termsOfService: http://helloreverb.com/terms/
   contact:
     $ref: "https://raw.githubusercontent.com/WindomZ/swagger-merger/dev/test/contact"
-  license:
+  license1:
     $ref#license: "https://raw.githubusercontent.com/WindomZ/swagger-merger/master/example/petstore_simple/petstore_simple.yaml#info/license"
+  license2:
+    $ref: "https://raw.githubusercontent.com/WindomZ/swagger-merger/dev/test/simple_yaml#info/license"
+  license3:
+    $ref#license: "https://raw.githubusercontent.com/WindomZ/swagger-merger/dev/test/simple_yaml#info/license"
 host: petstore.swagger.io
 basePath: /api
 schemes:
