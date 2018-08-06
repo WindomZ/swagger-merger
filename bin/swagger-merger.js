@@ -24,7 +24,7 @@ program
     noArgs = false
 
     merger({
-      input: options.input || file || '',
+      input: options.input || '',
       output: options.output || '',
       compact: options.compact
     }).catch(e => {
