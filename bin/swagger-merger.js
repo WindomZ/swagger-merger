@@ -20,11 +20,11 @@ program
     /^.+\.(json|yaml|yml)$/gi, null)
   .option('-c, --compact', 'compact JSON/YAML format string', null, null)
   .option('--debug', 'debug mode, such as print error tracks', null, null)
-  .action((file, options) => {
+  .action((options) => {
     noArgs = false
 
     merger({
-      input: options.input || file || '',
+      input: options.input || '',
       output: options.output || '',
       compact: options.compact
     }).catch(e => {
