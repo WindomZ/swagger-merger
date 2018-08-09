@@ -1,4 +1,8 @@
-# swagger-merger
+```
+┌─┐┬ ┬┌─┐┌─┐┌─┐┌─┐┬─┐   ┌┬┐┌─┐┬─┐┌─┐┌─┐┬─┐
+└─┐│││├─┤│ ┬│ ┬├┤ ├┬┘───│││├┤ ├┬┘│ ┬├┤ ├┬┘
+└─┘└┴┘┴ ┴└─┘└─┘└─┘┴└─   ┴ ┴└─┘┴└─└─┘└─┘┴└─
+```
 
 [![Greenkeeper badge](https://badges.greenkeeper.io/WindomZ/swagger-merger.svg)](https://greenkeeper.io/)
 [![Build Status](https://travis-ci.org/WindomZ/swagger-merger.svg?branch=master)](https://travis-ci.org/WindomZ/swagger-merger)
