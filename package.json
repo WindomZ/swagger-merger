@@ -1,6 +1,6 @@
 {
   "name": "swagger-merger",
-  "version": "1.4.1",
+  "version": "1.4.2",
   "description": "Merge multiple swagger files into a swagger file, support JSON/YAML.",
   "preferGlobal": true,
   "main": "index.js",
@@ -31,7 +31,7 @@
   "dependencies": {
     "async": "^2.6.1",
     "co": "^4.6.0",
-    "commander": "^2.16.0",
+    "commander": "^2.17.1",
     "fmtconv": "^1.0.6"
   },
   "devDependencies": {
