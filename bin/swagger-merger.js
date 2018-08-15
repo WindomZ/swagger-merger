@@ -28,7 +28,7 @@ program
       output: options.output || '',
       compact: options.compact
     }).catch(e => {
-      console.error(options.parent.debug ? e : e.message)
+      console.error((options.parent && options.parent.debug) ? e : e.message)
     })
   })
 
