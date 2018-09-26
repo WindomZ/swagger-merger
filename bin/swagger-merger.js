@@ -14,21 +14,24 @@ program
   .version(require('../package.json').version)
   .usage('[-h] [-v] [-c] [-o file] <-i file | file>')
   .description('Merge multiple swagger files into a swagger file, just support JSON/YAML.')
-  .option('-i, --input <file>', 'input a main/entry JSON/YAML swagger file',
+  .option('-i, --input <*.json|yaml|yml file>', 'input a main/entry JSON/YAML swagger file, MANDATORY',
     /^.+\.(json|yaml|yml)$/gi, null)
-  .option('-o, --output <file>', 'output a merged JSON/YAML swagger file, default is `swagger.*`',
+  .option('-o, --output <*.json|yaml|yml file>', 'output a merged JSON/YAML swagger file, default is `swagger.*`',
     /^.+\.(json|yaml|yml)$/gi, null)
   .option('-c, --compact', 'compact JSON/YAML format string', null, null)
   .option('--debug', 'debug mode, such as print error tracks', null, null)
   .action((options) => {
-    noArgs = false
+    noArgs = !(options.input)
+    if (noArgs) {
+      return
+    }
 
     merger({
       input: options.input || '',
       output: options.output || '',
       compact: options.compact
     }).catch(e => {
-      console.error((options.parent && options.parent.debug) ? e : e.message)
+      console.error(options.debug ? e : e.message)
     })
   })
 
