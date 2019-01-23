@@ -5,6 +5,7 @@
 'use strict'
 
 const program = require('commander')
+const util = require('util')
 
 const merger = require('../lib/merger')
 
@@ -31,7 +32,13 @@ program
       output: options.output || '',
       compact: options.compact
     }).catch(e => {
-      console.error(options.debug ? e : e.message)
+      if (options.debug) {
+        console.error(e)
+      } else if (e.mark) {
+        console.error(util.format('error: %s\ncontent: %s', e.message, e.mark.buffer))
+      } else {
+        console.error(util.format('error: %s', e.message))
+      }
     })
   })
 
@@ -44,7 +51,13 @@ if (noArgs) {
       output: program.opts().output || '',
       compact: program.opts().compact
     }).catch(e => {
-      console.error(program.opts().debug ? e : e.message)
+      if (program.opts().debug) {
+        console.error(e)
+      } else if (e.mark) {
+        console.error(util.format('error: %s\ncontent: %s', e.message, e.mark.buffer))
+      } else {
+        console.error(util.format('error: %s', e.message))
+      }
     })
   } else {
     program.outputHelp()
