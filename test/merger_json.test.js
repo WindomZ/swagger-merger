@@ -7,7 +7,7 @@ const test = require('ava')
 
 const merger = require('../lib/merger_json')
 
-test.serial('merger_json pass', t => {
+test.serial('test -> `merger_json pass`', t => {
   try {
     merger({
       dir: './example/echo/',
@@ -15,7 +15,7 @@ test.serial('merger_json pass', t => {
     })
     t.pass()
   } catch (e) {
-    t.fail(e)
+    t.fail(e.message)
   }
 
   try {
@@ -27,7 +27,7 @@ test.serial('merger_json pass', t => {
     })
     t.pass()
   } catch (e) {
-    t.fail(e)
+    t.fail(e.message)
   }
 
   try {
@@ -38,6 +38,6 @@ test.serial('merger_json pass', t => {
     })
     t.pass()
   } catch (e) {
-    t.fail(e)
+    t.fail(e.message)
   }
 })

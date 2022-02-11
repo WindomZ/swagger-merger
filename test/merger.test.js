@@ -11,7 +11,7 @@ const test = require('ava')
 
 const merger = require('../lib/merger')
 
-test.serial('merger fail', async (t) => {
+test.serial('test -> `merger fail`', async (t) => {
   await merger({
     input: ''
   }).then(() => {
@@ -25,18 +25,18 @@ test.serial('merger fail', async (t) => {
   }).catch(() => t.pass())
 })
 
-test.serial('merger pass', async (t) => {
+test.serial('test -> `merger pass`', async (t) => {
   await merger({
     input: './test/404.yaml'
   }).then(() => {
     t.pass()
-  }).catch(err => t.fail(err))
+  }).catch(err => t.fail(err.message))
 
   await merger({
     input: './test/in.yaml'
   }).then(() => {
     t.pass()
-  }).catch(err => t.fail(err))
+  }).catch(err => t.fail(err.message))
 
   // whether the results are expected
   t.is('' + fs.readFileSync('./test/out.yaml'),
@@ -46,7 +46,7 @@ test.serial('merger pass', async (t) => {
     input: './test/in.json'
   }).then(() => {
     t.pass()
-  }).catch(err => t.fail(err))
+  }).catch(err => t.fail(err.message))
 
   // whether the results are expected
   t.is('' + fs.readFileSync('./test/out.json'),
@@ -57,7 +57,7 @@ test.serial('merger pass', async (t) => {
     output: './test/out.json'
   }).then(() => {
     t.pass()
-  }).catch(err => t.fail(err))
+  }).catch(err => t.fail(err.message))
 
   // whether the results are expected
   t.is('' + fs.readFileSync('./test/out.json'),
@@ -68,7 +68,7 @@ test.serial('merger pass', async (t) => {
     output: './test/out.yaml'
   }).then(() => {
     t.pass()
-  }).catch(err => t.fail(err))
+  }).catch(err => t.fail(err.message))
 
   // whether the results are expected
   t.is('' + fs.readFileSync('./test/out.yaml'),
@@ -79,99 +79,99 @@ test.serial('merger pass', async (t) => {
     output: './test/out'
   }).then(() => {
     t.pass()
-  }).catch(err => t.fail(err))
+  }).catch(err => t.fail(err.message))
 
   await merger({
     input: './test/in.json',
     output: './test/out'
   }).then(() => {
     t.pass()
-  }).catch(err => t.fail(err))
+  }).catch(err => t.fail(err.message))
 })
 
-test.serial('merger heroku-pets pass', async (t) => {
+test.serial('test -> `merger heroku-pets pass`', async (t) => {
   await merger({
     input: './example/heroku-pets/index.yaml'
   }).then(() => {
     t.pass()
-  }).catch(err => t.fail(err))
+  }).catch(err => t.fail(err.message))
 
   await merger({
     input: './example/heroku-pets/index.json',
     output: './example/heroku-pets/swagger.json'
   }).then(() => {
     t.pass()
-  }).catch(err => t.fail(err))
+  }).catch(err => t.fail(err.message))
 
   await merger({
     input: './example/heroku-pets/index.yml'
   }).then(() => {
     t.pass()
-  }).catch(err => t.fail(err))
+  }).catch(err => t.fail(err.message))
 
   // whether the results are expected
   t.is('' + fs.readFileSync('./example/heroku-pets/swagger.json'),
     '' + fs.readFileSync('./example/heroku-pets/heroku-pets.json'))
 })
 
-test.serial('merger echo pass', async (t) => {
+test.serial('test -> `merger echo pass`', async (t) => {
   await merger({
     input: './example/echo/index.yaml'
   }).then(() => {
     t.pass()
-  }).catch(err => t.fail(err))
+  }).catch(err => t.fail(err.message))
 
   await merger({
     input: './example/echo/index.json',
     output: './example/echo/swagger.json'
   }).then(() => {
     t.pass()
-  }).catch(err => t.fail(err))
+  }).catch(err => t.fail(err.message))
 
   await merger({
     input: './example/echo/index.yml'
   }).then(() => {
     t.pass()
-  }).catch(err => t.fail(err))
+  }).catch(err => t.fail(err.message))
 
   // whether the results are expected
   t.is('' + fs.readFileSync('./example/echo/swagger.json'),
     '' + fs.readFileSync('./example/echo/echo.json'))
 })
 
-test.serial('merger petstore_simple pass', async (t) => {
+test.serial('test -> `merger petstore_simple pass`', async (t) => {
   await merger({
     input: './example/petstore_simple/index.yaml'
   }).then(() => {
     t.pass()
-  }).catch(err => t.fail(err))
+  }).catch(err => t.fail(err.message))
 
   await merger({
     input: './example/petstore_simple/index.json',
     output: './example/petstore_simple/swagger.json'
   }).then(() => {
     t.pass()
-  }).catch(err => t.fail(err))
+  }).catch(err => t.fail(err.message))
 
   await merger({
     input: './example/petstore_simple/index.yml'
   }).then(() => {
     t.pass()
-  }).catch(err => t.fail(err))
+  }).catch(err => t.fail(err.message))
 
   // whether the results are expected
   t.is('' + fs.readFileSync('./example/petstore_simple/swagger.json'),
     '' + fs.readFileSync('./example/petstore_simple/petstore_simple.json'))
 })
 
-test.serial('merger petstore_domain pass', async (t) => {
+test.serial('test -> `merger petstore_domain pass`', async (t) => {
   // make temp directory for testing
-  let dir = path.join(os.tmpdir(), 'swagger-merger')
+  const dir = path.join(os.tmpdir(), 'swagger-merger')
   try {
     if (!fs.existsSync(dir)) {
       fs.mkdirSync(dir)
     }
-    let dirTmp = path.join(dir, 'c1472d0a385c71aaf18cd770c366eb79')
+    const dirTmp = path.join(dir, 'c1472d0a385c71aaf18cd770c366eb79')
     if (!fs.existsSync(dirTmp)) {
       fs.mkdirSync(dirTmp)
     }
@@ -185,7 +185,7 @@ test.serial('merger petstore_domain pass', async (t) => {
     input: './example/petstore_domain/index.yaml'
   }).then(() => {
     t.pass()
-  }).catch(err => t.fail(err))
+  }).catch(err => t.fail(err.message))
 
   // clean temp directory
   if (fs.existsSync(dir)) {
@@ -198,20 +198,20 @@ test.serial('merger petstore_domain pass', async (t) => {
     input: './example/petstore_domain/index.yaml'
   }).then(() => {
     t.pass()
-  }).catch(err => t.fail(err))
+  }).catch(err => t.fail(err.message))
 
   await merger({
     input: './example/petstore_domain/index.json',
     output: './example/petstore_domain/swagger.json'
   }).then(() => {
     t.pass()
-  }).catch(err => t.fail(err))
+  }).catch(err => t.fail(err.message))
 
   await merger({
     input: './example/petstore_domain/index.yml'
   }).then(() => {
     t.pass()
-  }).catch(err => t.fail(err))
+  }).catch(err => t.fail(err.message))
 
   // whether the results are expected
   t.is('' + fs.readFileSync('./example/petstore_domain/swagger.json'),
