@@ -1,6 +1,6 @@
 {
   "name": "swagger-merger",
-  "version": "1.4.3",
+  "version": "1.5.0",
   "description": "Merge multiple swagger files into a swagger file, support JSON/YAML.",
   "preferGlobal": true,
   "main": "index.js",
@@ -8,10 +8,13 @@
     "swagger-merger": "./bin/swagger-merger.js"
   },
   "engines": {
-    "node": ">=6.14"
+    "node": ">=12.20.0"
   },
   "scripts": {
-    "test": "standard && nyc --reporter=lcov --reporter=text ava"
+    "lint": "standard",
+    "test": "nyc --reporter=lcov --reporter=text ava",
+    "test-coveralls": "node ./bin/nyc && shx cat ./coverage/lcov.info | node ./bin/coveralls.js --verbose",
+    "coverage": "nyc report --reporter=lcov | coveralls"
   },
   "repository": {
     "type": "git",
