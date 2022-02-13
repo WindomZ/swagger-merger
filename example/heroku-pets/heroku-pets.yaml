@@ -32,31 +32,19 @@ paths:
           maximum: 10000
       responses:
         200:
-          description: List all pets
+          description:  List all pets
           schema:
             title: Pets
             type: array
             items:
-              type: object
-              properties:
-                name:
-                  type: string
-                birthday:
-                  type: integer
-                  format: int32
+              $ref: '#/definitions/Pet'
     post:
       parameters:
         - name: pet
           in: body
           description: The pet JSON you want to post
           schema:
-            type: object
-            properties:
-              name:
-                type: string
-              birthday:
-                type: integer
-                format: int32
+            $ref: '#/definitions/Pet'
           required: true
       responses:
         200:
@@ -67,13 +55,7 @@ paths:
           in: body
           description: The pet JSON you want to post
           schema:
-            type: object
-            properties:
-              name:
-                type: string
-              birthday:
-                type: integer
-                format: int32
+            $ref: '#/definitions/Pet'
           required: true
       responses:
         200:

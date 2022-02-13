@@ -40,16 +40,7 @@
               "title": "Pets",
               "type": "array",
               "items": {
-                "type": "object",
-                "properties": {
-                  "name": {
-                    "type": "string"
-                  },
-                  "birthday": {
-                    "type": "integer",
-                    "format": "int32"
-                  }
-                }
+                "$ref": "#/definitions/Pet"
               }
             }
           }
@@ -62,16 +53,7 @@
             "in": "body",
             "description": "The pet JSON you want to post",
             "schema": {
-              "type": "object",
-              "properties": {
-                "name": {
-                  "type": "string"
-                },
-                "birthday": {
-                  "type": "integer",
-                  "format": "int32"
-                }
-              }
+              "$ref": "#/definitions/Pet"
             },
             "required": true
           }
@@ -89,16 +71,7 @@
             "in": "body",
             "description": "The pet JSON you want to post",
             "schema": {
-              "type": "object",
-              "properties": {
-                "name": {
-                  "type": "string"
-                },
-                "birthday": {
-                  "type": "integer",
-                  "format": "int32"
-                }
-              }
+              "$ref": "#/definitions/Pet"
             },
             "required": true
           }
