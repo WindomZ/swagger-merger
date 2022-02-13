@@ -5,7 +5,7 @@
 ```
 
 [![Greenkeeper badge](https://badges.greenkeeper.io/WindomZ/swagger-merger.svg)](https://greenkeeper.io/)
-[![Node.js CI](https://github.com/WindomZ/swagger-merger/actions/workflows/main.yml/badge.svg)](https://github.com/WindomZ/swagger-merger/actions/workflows/ci.yml)
+[![Node(≥12.22) CI](https://github.com/WindomZ/swagger-merger/actions/workflows/ci.yml/badge.svg)](https://github.com/WindomZ/swagger-merger/actions/workflows/ci.yml)
 [![Coverage Status](https://coveralls.io/repos/github/WindomZ/swagger-merger/badge.svg?branch=master)](https://coveralls.io/github/WindomZ/swagger-merger?branch=master)
 [![Standard - JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com/)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](https://opensource.org/licenses/MIT)
