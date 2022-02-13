@@ -1,5 +1,5 @@
 # For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
-name: Node.js CI
+name: Node.js(≥12.22) CI
 on: [ push, pull_request ]
 env:
   CI: true
@@ -11,7 +11,8 @@ jobs:
       fail-fast: false
       matrix:
         node: [ 12.22, 14.x, 16.x, 17.x ]
-        os: [ ubuntu-latest, windows-latest ]
+        # os: [ ubuntu-latest, windows-latest ]
+        os: [ ubuntu-latest ]
     steps:
       - name: Clone repository
         uses: actions/checkout@v2
