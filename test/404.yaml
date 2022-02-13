@@ -5,15 +5,15 @@ info:
   description: A sample API that uses a petstore as an example to demonstrate features in the swagger-2.0 specification
   termsOfService: http://helloreverb.com/terms/
   contact:
-    $ref: "https://raw.githubusercontent.com/WindomZ/swagger-merger/master/404.yaml"
+    $ref: "https://raw.githubusercontent.com/WindomZ/swagger-merger/dev/404.yaml"
   license:
-    $ref#license: "https://raw.githubusercontent.com/WindomZ/swagger-merger/master/404.yaml#info/license"
+    $ref#license: "https://raw.githubusercontent.com/WindomZ/swagger-merger/dev/404.yaml#info/license"
 host: petstore.swagger.io
 basePath: /api
 schemes:
   $ref: "./empty.yaml"
 consumes:
-  $ref: "https://raw.githubusercontent.com/WindomZ/swagger-merger/master/404.md"
+  $ref: "https://raw.githubusercontent.com/WindomZ/swagger-merger/dev/404.md"
 produces:
   - application/json
 paths:
@@ -21,4 +21,4 @@ paths:
   $ref#pets-id: "./empty.yaml"
 definitions:
   $ref#pets: "./empty.yaml"
-  $ref#error: "https://raw.githubusercontent.com/WindomZ/swagger-merger/master/test/empty.yaml"
+  $ref#error: "https://raw.githubusercontent.com/WindomZ/swagger-merger/dev/test/empty.yaml"

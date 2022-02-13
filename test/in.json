@@ -8,16 +8,16 @@
     },
     "termsOfService": "http://helloreverb.com/terms/",
     "contact": {
-      "$ref": "https://raw.githubusercontent.com/WindomZ/swagger-merger/master/test/contact"
+      "$ref": "https://raw.githubusercontent.com/WindomZ/swagger-merger/dev/test/contact"
     },
     "license1": {
-      "$ref#license": "https://raw.githubusercontent.com/WindomZ/swagger-merger/master/example/petstore_simple/petstore_simple.yaml#info/license"
+      "$ref#license": "https://raw.githubusercontent.com/WindomZ/swagger-merger/dev/example/petstore_simple/petstore_simple.yaml#info/license"
     },
     "license2": {
-      "$ref": "https://raw.githubusercontent.com/WindomZ/swagger-merger/master/test/simple_json#info/license"
+      "$ref": "https://raw.githubusercontent.com/WindomZ/swagger-merger/dev/test/simple_json#info/license"
     },
     "license3": {
-      "$ref#license": "https://raw.githubusercontent.com/WindomZ/swagger-merger/master/test/simple_json#info/license"
+      "$ref#license": "https://raw.githubusercontent.com/WindomZ/swagger-merger/dev/test/simple_json#info/license"
     }
   },
   "host": "petstore.swagger.io",
@@ -42,6 +42,6 @@
   },
   "definitions": {
     "$ref#pets": "https://raw.githubusercontent.com/WindomZ/swagger-merger/pets.yaml",
-    "$ref#error": "https://raw.githubusercontent.com/WindomZ/swagger-merger/master/example/petstore_simple/definitions/error.yaml"
+    "$ref#error": "https://raw.githubusercontent.com/WindomZ/swagger-merger/dev/example/petstore_simple/definitions/error.yaml"
   }
 }

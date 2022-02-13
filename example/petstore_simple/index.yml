@@ -5,9 +5,9 @@ info:
   description: A sample API that uses a petstore as an example to demonstrate features in the swagger-2.0 specification
   termsOfService: http://helloreverb.com/terms/
   contact:
-    $ref: "https://raw.githubusercontent.com/WindomZ/swagger-merger/master/example/petstore_simple/petstore_simple.yml#info/contact"
+    $ref: "https://raw.githubusercontent.com/WindomZ/swagger-merger/dev/example/petstore_simple/petstore_simple.yml#info/contact"
   license:
-    $ref#license: "https://raw.githubusercontent.com/WindomZ/swagger-merger/master/example/petstore_simple/petstore_simple.yml#info/license"
+    $ref#license: "https://raw.githubusercontent.com/WindomZ/swagger-merger/dev/example/petstore_simple/petstore_simple.yml#info/license"
 host: petstore.swagger.io
 basePath: /api
 schemes:
@@ -20,5 +20,5 @@ paths:
   $ref#pets: "./paths/pets.yml"
   $ref#pets-id: "./paths/pets-id.yml"
 definitions:
-  $ref#pets: "https://raw.githubusercontent.com/WindomZ/swagger-merger/master/example/petstore_simple/definitions/pets.yaml"
-  $ref#error: "https://raw.githubusercontent.com/WindomZ/swagger-merger/master/example/petstore_simple/definitions/error.yaml"
+  $ref#pets: "https://raw.githubusercontent.com/WindomZ/swagger-merger/dev/example/petstore_simple/definitions/pets.yaml"
+  $ref#error: "https://raw.githubusercontent.com/WindomZ/swagger-merger/dev/example/petstore_simple/definitions/error.yaml"
