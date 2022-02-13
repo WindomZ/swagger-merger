@@ -18,6 +18,12 @@
     },
     "license3": {
       "$ref#license": "https://raw.githubusercontent.com/WindomZ/swagger-merger/dev/test/simple_json#info/license"
+    },
+    "license4": {
+      "$ref#license": "./simple_yaml#/notExistTag"
+    },
+    "license5": {
+      "$ref#license": "../example/petstore_simple/petstore_simple.json#info/notExistTag"
     }
   },
   "host": "petstore.swagger.io",

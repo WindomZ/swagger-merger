@@ -19,6 +19,10 @@ info:
   license3:
     name: MIT
     url: 'http://opensource.org/licenses/MIT'
+  license4:
+    '$ref#license': './simple_yaml#/notExistTag'
+  license5:
+    '$ref#license': '../example/petstore_simple/petstore_simple.json#info/notExistTag'
 host: petstore.swagger.io
 basePath: /api
 schemes:
