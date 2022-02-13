@@ -35,7 +35,7 @@
     "async": "^3.2.3",
     "co": "^4.6.0",
     "commander": "^9.0.0",
-    "fmtconv": "^1.0.7"
+    "fmtconv": "^1.1.0"
   },
   "devDependencies": {
     "ava": "^4.0.1",
