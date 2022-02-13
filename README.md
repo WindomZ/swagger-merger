@@ -10,7 +10,9 @@
 [![Standard - JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com/)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
-> Merge **multiple** swagger files into **a** swagger file, support **JSON**/**YAML**.
+> Merge **multiple** related files from **a** input swagger file, Write to **a** output swagger file.
+> 
+> Support **JSON**/**YAML**.
 
 [![NPM](https://nodei.co/npm/swagger-merger.png)](https://nodei.co/npm/swagger-merger/)
 
@@ -97,10 +99,14 @@ swagger-merger -i in.json -o out.yaml    # Merge in.json into out.yaml
 ### Module
 > How to use?
 
+```bash
+npm install swagger-merger
+```
+
 ```js
 #!/usr/bin/env node
 
-const swaggerMerger = require('./swagger-merger')
+const swaggerMerger = require('swagger-merger')
 
 swaggerMerger.merge({
   input: 'index.json',
