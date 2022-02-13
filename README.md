@@ -94,6 +94,23 @@ swagger-merger -i in.json -o out.json -c # Merge in.json into out.json and compr
 swagger-merger -i in.json -o out.yaml    # Merge in.json into out.yaml
 ```
 
+### Module
+> How to use?
+
+```js
+#!/usr/bin/env node
+
+const swaggerMerger = require('./swagger-merger')
+
+swaggerMerger.merge({
+  input: 'index.json',
+  output: 'swagger.json',
+  compact: false
+}).catch(e => {
+  console.error(e)
+})
+```
+
 ## Install
 ```bash
 npm install swagger-merger -g
