@@ -5,7 +5,7 @@
 ```
 
 [![Greenkeeper badge](https://badges.greenkeeper.io/WindomZ/swagger-merger.svg)](https://greenkeeper.io/)
-[![Node(≥12.22) CI](https://github.com/WindomZ/swagger-merger/actions/workflows/ci.yml/badge.svg)](https://github.com/WindomZ/swagger-merger/actions/workflows/ci.yml)
+[![Node.js(≥12.22) CI](https://github.com/WindomZ/swagger-merger/actions/workflows/ci.yml/badge.svg)](https://github.com/WindomZ/swagger-merger/actions/workflows/ci.yml)
 [![Coverage Status](https://coveralls.io/repos/github/WindomZ/swagger-merger/badge.svg?branch=master)](https://coveralls.io/github/WindomZ/swagger-merger?branch=master)
 [![Standard - JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com/)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](https://opensource.org/licenses/MIT)
@@ -92,6 +92,23 @@ swagger-merger -i in.json                # Merge in.json into swagger.json
 swagger-merger -i in.json -o out.json    # Merge in.json into out.json
 swagger-merger -i in.json -o out.json -c # Merge in.json into out.json and compress it
 swagger-merger -i in.json -o out.yaml    # Merge in.json into out.yaml
+```
+
+### Module
+> How to use?
+
+```js
+#!/usr/bin/env node
+
+const swaggerMerger = require('./swagger-merger')
+
+swaggerMerger.merge({
+  input: 'index.json',
+  output: 'swagger.json',
+  compact: false
+}).catch(e => {
+  console.error(e)
+})
 ```
 
 ## Install
