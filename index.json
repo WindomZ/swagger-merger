@@ -1,0 +1,18 @@
+{
+  "$ref": "apis.swagger.json",
+  "paths": {
+    "$ref#paths": "apis.swagger.json#paths",
+    "/test-path/{id}": {
+      "parameters": [
+        {
+          "$ref": "./id.json"
+        }
+      ],
+      "get": {
+        "responses": {
+          "$ref": "./responses.json#/components/test-path"
+        }
+      }
+    }
+  }
+}

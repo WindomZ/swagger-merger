@@ -1,0 +1,47 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "Echo",
+    "description": "#### Echos back every URL, method, parameter and header\nFeel free to make a path or an operation and use **Try Operation** to test it. The echo server will\nrender back everything.\n"
+  },
+  "schemes": [
+    "http"
+  ],
+  "$ref": "./host.yaml",
+  "basePath": "/echo",
+  "paths": {
+    "/": {
+      "get": {
+        "responses": {
+          "$ref": "./responses.json#/components/root/get"
+        }
+      },
+      "post": {
+        "responses": {
+          "$ref": "./responses.json#/components/root/post"
+        },
+        "parameters": [
+          {
+            "$ref": "./name.json"
+          },
+          {
+            "$ref": "./year.json"
+          }
+        ]
+      }
+    },
+    "/test-path/{id}": {
+      "parameters": [
+        {
+          "$ref": "./id.json"
+        }
+      ],
+      "get": {
+        "responses": {
+          "$ref": "./responses.json#/components/test-path"
+        }
+      }
+    }
+  }
+}

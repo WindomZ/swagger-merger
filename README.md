@@ -10,7 +10,9 @@
 [![Standard - JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com/)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
-> Merge **multiple** swagger files into **a** swagger file, support **JSON**/**YAML**.
+> Merge **multiple** related files from **a** input swagger file, Write to **a** output swagger file.
+> 
+> Support **JSON**/**YAML**.
 
 [![NPM](https://nodei.co/npm/swagger-merger.png)](https://nodei.co/npm/swagger-merger/)
 
@@ -32,13 +34,14 @@
 - [Official standards](https://swagger.io/docs/specification/using-ref/)
 - Recommended, universal
 
-For example:
+For `yaml` example:
+
 ```yaml
 $ref: "./host.yaml"
 parameters:
-  - $ref: "./name.yaml"
+  - $ref: "name.yaml"
   - $ref: "./year.yaml"
-  - $ref: "./age.yaml#/alex/son"
+  - $ref: "age.yaml#/alex/son"
 remote:
   $ref: "https://raw.githubusercontent.com/WindomZ/swagger-merger/remote.yaml#/name"
 responses:
@@ -51,16 +54,30 @@ responses:
 - Non-standard, suggest you use it for yourself
 - Instead of `$ref`, can be used _side by side_ and not an array
 
-For example:
+For `yaml` example:
+
 ```yaml
 paths:
   $ref#pets: "./paths/pets.yaml"
   $ref#pets-id: "./paths/pets-id.yaml"
-definitions:
-  $ref#pets: "https://raw.githubusercontent.com/WindomZ/swagger-merger/pets.yaml"
-  $ref#error: "https://raw.githubusercontent.com/WindomZ/swagger-merger/error.yaml"
+paths-url:
+  $ref#paths: "https://raw.githubusercontent.com/WindomZ/swagger-merger/master/test/no_ext_json"
 ```
 
+Output `yaml`:
+
+```yaml
+paths:
+  /pets:
+    hello: world
+  /pets/{id}:
+    good: bye
+paths-url:
+  /pets:
+    hello: world
+  /pets/{id}:
+    good: bye
+```
 ### CLI
 > How to use?
 
@@ -97,10 +114,14 @@ swagger-merger -i in.json -o out.yaml    # Merge in.json into out.yaml
 ### Module
 > How to use?
 
+```bash
+npm install swagger-merger
+```
+
 ```js
 #!/usr/bin/env node
 
-const swaggerMerger = require('./swagger-merger')
+const swaggerMerger = require('swagger-merger')
 
 swaggerMerger.merge({
   input: 'index.json',

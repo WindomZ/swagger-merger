@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-</pets>
-    <hello>world</hello>
-<//pets>
-</pets/{id}>
-    <good>bye</good>
-<//pets/{id}>
+<paths>
+    <pets>
+        <hello>hello world</hello>
+    </pets>
+    <pets-id>
+        <good>good bye</good>
+    </pets-id>
+</paths>
