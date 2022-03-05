@@ -32,6 +32,8 @@ paths:
   $ref#pets-id: "https://raw.githubusercontent.com/WindomZ/swagger-merger/pets-id"
   $ref#no-ext: "./no_ext_yaml"
   $ref#wrong-ext: "./wrong_ext.xml"
+  /v2/pets/{id}:
+    $ref: ./simple_yaml#/paths/~1pets~1{id}
 definitions:
   $ref#pets: "https://raw.githubusercontent.com/WindomZ/swagger-merger/pets.yaml"
   $ref#error: "https://raw.githubusercontent.com/WindomZ/swagger-merger/master/example/petstore_simple/definitions/error.yaml"

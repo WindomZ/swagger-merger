@@ -44,7 +44,10 @@
     "$ref#pets": "./paths/pets",
     "$ref#pets-id": "https://raw.githubusercontent.com/WindomZ/swagger-merger/pets-id",
     "$ref#no-ext": "./no_ext_json",
-    "$ref#wrong-ext": "./wrong_ext.xml"
+    "$ref#wrong-ext": "./wrong_ext.xml",
+    "/v2/pets/{id}": {
+      "$ref": "./simple_json#/paths/~1pets~1{id}"
+    }
   },
   "definitions": {
     "$ref#pets": "https://raw.githubusercontent.com/WindomZ/swagger-merger/pets.yaml",
