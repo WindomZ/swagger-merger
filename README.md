@@ -84,7 +84,7 @@ paths-url:
 ```bash
 $ swagger-merger -h
 
-  Usage: swagger-merger [-h] [-v] [-c] [-o file] <-i file | file>
+  Usage: swagger-merger [-h] [-V] [-c] [-o file] <-i file | file>
 
   Merge multiple swagger files into a swagger file, just support JSON/YAML.
 
